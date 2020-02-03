@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns = "http://www.w3.org/1999/xhtml"  xml:lang = "pt-br"  lang = "pt-br">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" /> 
+		
+		<link rel="stylesheet" type="text/css" href="css/abertura.css" media="screen, projection" title="normal"/>
+		<link rel="alternate stylesheet" type="text/css" href="css/abertura2.css" media="screen, projection" title="grande"/>
+		
+		
+		<script type="text/javascript" src="scripts/AC_RunActiveContent.js"></script>
+		<script type="text/javascript" src="scripts/protoaculous.js"></script>
+		<script type="text/javascript" src="scripts/deployJava.js"></script>
+		<script type="text/javascript" src="scripts/AC_OETags.js"></script>
+		<script type="text/javascript" src="scripts/browser.js"></script>
+
+
+		<title>Movimentos Complexos</title>
+	</head>
+	<body>		
+	
+	<object id="SalvaLocal" name="SalvaLocal" type="application/x-shockwave-flash" data="applets/SalvaLocal.swf" width="1" height="1">
+		<param name="menu" value="false" />
+		<param name="movie" value="applets/SalvaLocal.swf" />
+	</object>
+	
+		<div id="container">
+			<div id="cabecalho">
+				<div id="onde_estou">
+					<h2>Verificação de compatibilidade</h2>
+				</div>
+				<div id="logo"></div>
+				<div id="links">
+					<a href="mapa.html">Mapa</a>
+					<span>Introdução</span>
+					<a href="index.html">Início</a>
+				</div>
+				
+				<br class="limpador" />
+			</div>
+			
+			<div id="abertura">
+				<div id="conteudo">
+
+					
+					<div id="texto_compatibilidade">
+						<p>O nosso software precisa de certos requisitos para funcionar bem, segue abaixo a verificação de compatibilidade do software com o seu sistema:</p>
+					</div>
+					<div id="verificacoes">
+						<div class="coluna1 coluna">
+							<h2>Navegador de internet</h2>
+							<p>
+								O software funciona corretamente nos seguintes navegadores de internet:
+							</p>
+							<p>
+								1. Firefox 3.0+; (recomendado) <br />
+								2. Internet Explorer 6.0+; <br />
+								3. Safari 4+; <br />
+								4. Opera 9+; <br />
+							</p>
+							<p> Sua versão: </p>
+							<p><span id="browserOsInst"></span></p>
+							
+						</div>
+						<div class="coluna">
+							<h2>Java Virtual Machine</h2>
+							<p>É preciso que esteja instalada no sistema a seguinte versão do Java:</p>
+							<p>1. Sun Java VM<span id="verJavaReq"></span></p>
+							<p>Sua versão: </p>
+							<p>Sun Java VM <span id="verJavaInst"></span></p>
+						</div>
+						<div class="coluna">
+							<h2>Adobre Flash Player</h2>
+							<p>A seguinte versão é necessária:</p>
+							<p>1. Macromedia Flash Player <span id="verFlashReq"></span></p>
+							<p>Sua versão: </p>
+							<p>Macromedia Flash Player <span id="verFlashInst"></span></p>
+						</div>
+					</div>
+					<br class="limpador">
+					<div>
+					
+						<div class="a_esquerda">
+							<div class="a_esquerda apontador">
+								<a href="atividade1_parte1.html">Começar</a>
+							</div>
+							<div class="a_esquerda seta_apontador"></div>
+						</div>
+						
+					</div>
+
+					
+					<br class="limpador">
+
+				</div>
+			</div>
+			<br class="limpador" />
+			<div id="rodape">
+				<a href="http://m3.mat.br" target="_blank">Sobre o Matemática Multimídia</a>
+			</div>
+		</div>
+
+
+	</body>
+</html>
+
+
+
+
+<script type="text/javascript">
+	
+
+	var jah_abriu = false;
+	var browser=navigator.appName;
+	var b_version=navigator.appVersion;
+	
+	var flashRequiredMajorVersion = 9.0;
+	var flashRequiredMinorVersion = 0;
+	var flashRequiredRevision = 0;
+	
+	var javaRequiredVersion="1.4+";
+	var hasReqestedVersion = DetectFlashVer(flashRequiredMajorVersion, flashRequiredMinorVersion, flashRequiredRevision);
+
+	$('verFlashInst').innerHTML=GetSwfVer();
+	$('verFlashReq').innerHTML=flashRequiredMajorVersion+'.'+flashRequiredMinorVersion+'.'+flashRequiredRevision;
+
+	$('verJavaInst').innerHTML=deployJava.getJREs();
+	$('verJavaReq').innerHTML=javaRequiredVersion;
+	
+	$('browserOsInst').innerHTML = BrowserDetect.browser + ' ' + BrowserDetect.version + ' em ' + BrowserDetect.OS ;
+
+	/*
+	if ((BrowserDetect.browser=='Firefox') && (BrowserDetect.version>=3) && (BrowserDetect.OS=='Windows')) {
+		//$('statusBrowserOs').setStyle({color:'#00AA00'});
+		//$('statusBrowserOs').innerHTML='Sem problemas detectados.';
+		a = 1;
+	} else {
+		var conteudo = '<p><strong>Erro de compatibilidade – Navegador</strong></p><p>O seu navegador não é compatível com este software, para usar este software você precisa ter um dos seguintes navegadores de internet: </p><p>1. Firefox 3.0+ (mais recomendado)<br />2. Internet Explorer 7.0+<br />3. Safari 4+<br />4. Opera 9+';
+		conteudo += '<p style="float:right;"><a href="detect.html">Ver relatório de compatibilidade completo</a></p><br class="limpador" />';
+		conteudo += '<p><a id="fechar_desesperado" style="float:right; href="#">Fechar</a><a id="continuar_mesmo_assim" style="float:right; margin-right:10px;"" href="#">Continuar mesmo assim</a><a style="float:right; margin-right:10px;" href="http://www.mozilla.com/firefox">Instalar o Firefox</a></p><br class="limpador" />';
+		var tmp = new PopupDesesperados(conteudo, 20);
+		jah_abriu = true;
+			
+		//$('statusBrowserOs').setStyle({color:'#CC0000'});
+		//$('statusBrowserOs').innerHTML='Browser diferente de Firefox 3 ou sistema operacional não Windows.';
+		//$('statusBrowserOsTexto').innerHTML='<p>Para estas versões para revisões desses módulos, se requerer o uso do Mozilla Firefox no sistema operacional Windows. Esta é uma exigência apenas temporária, as versões finais serão multi-plataforma.</p>'
+		//	+ '<p>Download: <a href="http://www.mozilla.com/firefox" target="_blank"><img src="http://sfx-images.mozilla.org/affiliates/Buttons/firefox3/FF3_80x15_g.png" width="80" height="15" style="border-style:none;" title="Mozilla Firefox" alt="Firefox" /></a></p>'
+	
+	}
+	
+	
+
+	
+	if (hasReqestedVersion) { 
+		//$('statusFlash').setStyle({color:'#00AA00'});
+		//$('statusFlash').innerHTML='Sem problemas detectados.';
+		a = 1;
+	} else {
+		if (!jah_abriu)
+		{
+			var conteudo = '<p><strong>Erro de compatibilidade – Adobe Flash Player</strong></p><p>A versão mínima necessária do plugin para usar este software é <strong><em>Adobe Flash Player '+flashRequiredMajorVersion+'</em></strong>.</p>';
+			conteudo += '<p style="float:right;"><a href="detect.html">Ver relatório de compatibilidade completo</a></p><br class="limpador" />';
+			conteudo += '<p><a id="fechar_desesperado" style="float:right; href="#">Fechar</a><a id="continuar_mesmo_assim" style="float:right; margin-right:10px;"" href="#">Continuar mesmo assim</a><a style="float:right; margin-right:10px;" href="http://www.adobe.com/go/getflash">Instalar o Plugin do Flash</a></p><br class="limpador" />';
+			var tmp = new PopupDesesperados(conteudo, 20);
+			jah_abriu = true;
+		}
+		
+		//$('statusFlash').setStyle({color:'#CC0000'});
+		//$('statusFlash').innerHTML='Problemas detectados.';
+		//$('statusFlashTexto').innerHTML='<p>Download: <a href="http:///www.adobe.com/go/getflash"><img border=0 src="http://www.adobe.com/images/shared/download_buttons/get_adobe_flash_player.png"></a></p>';
+		
+	}
+	
+
+	if (deployJava.versionCheck(javaRequiredVersion)) {
+		//$('statusJava').setStyle({color:'#00AA00'});
+		//$('statusJava').innerHTML='Sem problemas detectados.';
+		a = 1;
+	} else {
+		
+		if (!jah_abriu)
+		{
+			var conteudo = '<p><strong>Erro de compatibilidade – Java Virtual Machine</strong></p><p>A versão mínima necessária da Java Virtual Machine para usar este software é <strong><em>'+javaRequiredVersion+'</em></strong>.</p>';
+			conteudo += '<p style="float:right;"><a href="detect.html">Ver relatório de compatibilidade completo</a></p><br class="limpador" />';
+			conteudo += '<p><a id="fechar_desesperado" style="float:right; href="#">Fechar</a><a id="continuar_mesmo_assim" style="float:right; margin-right:10px;"" href="#">Continuar mesmo assim</a><a style="float:right; margin-right:10px;" href="http://www.java.com">Instalar Java VM</a></p><br class="limpador" />';
+			var tmp = new PopupDesesperados(conteudo, 20);
+			jah_abriu = true;
+		}
+		
+		//$('statusJava').setStyle({color:'#CC0000'});
+		//$('statusJava').innerHTML='Problemas detectados.';
+		//$('statusJavaTexto').innerHTML='<p>Download: <a href="http:///www.java.com"><img border=0 src="img/java.jpg"></a></p>';
+		
+	}
+	*/
+	
+
+</script>

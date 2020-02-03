@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns = "http://www.w3.org/1999/xhtml"  xml:lang = "pt-br"  lang = "pt-br">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" /> 
+		<link rel="stylesheet" type="text/css" href="css/estilo.css" media="screen, projection" title="normal"/>
+		<link rel="alternate stylesheet"  type="text/css" href="css/estilo2.css" title="grande" />
+		
+		<link rel="stylesheet" type="text/css" href="css/popup.css" media="screen, projection" />
+		<link rel="stylesheet" type="text/css" href="css/notas.css" media="screen, projection" />
+		<link rel="stylesheet" type="text/css" href="css/bloco.css" media="screen, projection" />
+		<link rel="stylesheet" type="text/css" href="css/calculadora.css" media="screen, projection" />
+
+		<!--[if IE 7]>
+			<link rel="stylesheet" type="text/css" href="css/estilo_ie7.css" media="screen, projection" />
+		<![endif]-->
+		<!--[if lte IE 6]>	
+			<link rel="stylesheet" type="text/css" href="css/estilo_ie6.css" media="screen, projection" />
+		<![endif]-->
+		
+		<script type="text/javascript" src="scripts/AC_RunActiveContent.js"></script>
+		<script type="text/javascript" src="scripts/protoaculous.js"></script>
+		<script type="text/javascript" src="scripts/popup.js"></script>
+		<script type="text/javascript" src="scripts/notas.js"></script>
+		<script type="text/javascript" src="scripts/bloco.js"></script>
+		<script type="text/javascript" src="scripts/calculadora.js"></script>
+		<script type="text/javascript" src="scripts/rolagem.js"></script>
+		
+		<!-- O arquivo referencias.js e curiosidades.js devem ser incluídos depois do interface -->
+		<script type="text/javascript" src="scripts/interface.js"></script>
+		<script type="text/javascript" src="scripts/referencias.js"></script>
+		<script type="text/javascript" src="scripts/curiosidades.js"></script>
+		
+		<!-- O arquivo exemplo_correcao.js que contem as funções que corrigem, deve ser incluido antes do exemplo_conteudo.js-->
+		<!-- O arquivo inputs.js deve ser incluído por último -->
+		<script type="text/javascript" src="scripts/m3_geral.js"></script>
+		<script type="text/javascript" src="scripts/complexos.js"></script>
+		<script type="text/javascript" src="scripts/complexos_atv1_correcao.js"></script>
+		<script type="text/javascript" src="scripts/complexos_atv1_conteudo.js"></script>
+		<script type="text/javascript" src="scripts/inputs.js"></script>
+
+		<script type="text/javascript">
+			var PosicaoAtual = {Atividade: 1, Parte: 4};
+			var ProximaParte = 'atividade1_parte6.html';
+		</script>
+
+		<title>Movimentos Complexos</title>
+	</head>
+	<body>
+	<!--
+	Nunca crie um "onload" aqui, use a Classe Event do Prototype: Event.observe(window, 'load', funcaoAqui);
+	Veja um exemplo no arquivo exemplo_correcao.js
+	-->
+		<div id="container">
+			<div id="cabecalho">
+				<div id="onde_estou">
+					<div class="numero_atividade">1</div>
+					<h1>Movimentos Complexos</h1> <img src="img_layout/setinha-cabecalho.gif" alt=""/> <h2>Translação</h2>
+				</div>
+				<div id="logo"></div>
+				<div id="links">
+					<a id="mapa" href="mapa.html" >Mapa</a>
+					<a href="introducao.html">Introdução</a>
+					<a href="index.html">Início</a>
+				</div>
+				
+				<div class="limpador"></div>
+			</div>
+			<!-- Por enquanto o controle de partes trancadas não será implementado-->
+			<ul id="partes">
+			</ul>
+						
+			<div id="software">
+				<div id="conteudo">
+					<object id="SalvaLocal" name="SalvaLocal" type="application/x-shockwave-flash" data="applets/SalvaLocal.swf" width="1" height="1">
+						<param name="menu" value="false" />
+						<param name="movie" value="applets/SalvaLocal.swf" />
+					</object>
+				
+					<div class="texto_solto">
+						<p>
+							Observe os triângulos na ferramenta. O triângulo  A'B'C' é obtido a partir do triângulo ABC, assim como nas partes anteriores deste software.
+						</p>
+					</div>
+
+					<div class="caixa instrucoes">
+						<h2>Instruções</h2>
+						<p>
+							Você poderá movimentar apenas o ponto Z<sub>2</sub>;
+						</p>
+						<p>
+							As coordenadas dos pontos, os ângulos entre as retas suportes e os tamanhos dos lados dos triângulos podem ser obtidos selecionando as opções desejadas na lista abaixo da ferramenta;
+						</p>
+						<p>
+							Não se esqueça de que o triângulo móvel é obtido a partir do fixo e dos valores de Z<sub>1</sub> e Z<sub>2</sub> da seguinte forma:
+							<br class="limpador">
+							<br class="limpador">
+							<img src="imgs/formulaA1_P2.png" alt="operacao" />
+						</p>
+					</div>
+
+					<div id="questoes">
+					
+						<!--
+						Para o Script se localizar, essa div "texto_genérico" é necessária. Caso não tenha texto aqui, deixe ela vazia.
+						Coloque aqui qualquer texto genérico de instruções e teoria.
+						-->
+						<div id="texto_generico">
+							Nesta parte do software, o ponto Z<sub>1</sub> ficará fixo em 1+0i, valor que não altera o triângulo inicial.
+						</div>
+
+						
+						<!-- Aqui vão ser colocadas as questões, via JavaScript.-->
+						<div id="parte5_q11"></div>
+						<p>
+							Para se obter A'B'C', o triângulo ABC não sofreu nem dilatação nem rotação. A transformação sofrida foi a <strong>translação</strong>. Observe que a translação não altera as dimensões do triângulo, apenas o desloca no plano. E, para que ela ocorresse, bastou somar um número complexo aos números complexos que representam os vértices do triângulo original.
+						</p>
+						<div id="parte5_q12"></div>
+
+						<p>
+							Observe que o movimento de translação acontece <strong>isolado</strong> apenas quando Z<sub>1</sub> = 1+0i e Z<sub>2</sub> é um complexo qualquer. A quantidade transladada em cada direção é determinada pela parte real (horizontal) e pela parte imaginária (vertical) de Z<sub>2</sub>.
+						</p>
+						
+						<a href="javascript:;" id="corrigir_tudo">Corrigir todas as questões</a>
+						<a id="link_continuar">
+							<span class="escondido">Continuar</span>
+						</a>
+						<div class="limpador"></div>
+					</div>
+					<!--<div style="height:300px;"></div>-->
+				</div>
+			</div>
+			<br class="limpador" />
+			<div id="rodape">
+				<a href="http://m3.mat.br" target="_blank">Sobre o Matemática Multimídia</a>
+			</div>
+		</div>
+		<div id="applet">
+			<div id="borda_applet" class="altura_applet_5 borda sem_fundo">
+				<applet name="ggbApplet" code="geogebra.GeoGebraApplet" codebase="./" archive="jars/geogebra.jar" width="519" height="460" MAYSCRIPT>
+					<param name="filename" value="applets/complexos_at1_p5.ggb" />
+					<param name="framePossible" value="false" />
+					<param name="showResetIcon" value="false" />
+					<param name="enableRightClick" value="false" />
+					<param name="enableChooserPopups" value="false" />
+					<param name="enableShiftDragZoom" value="false" />
+					<param name="showMenuBar" value="false" />
+					<param name="showToolBar" value="false" />
+					<param name="showToolBarHelp" value="false" />
+					<param name="showAlgebraInput" value="false" />
+					<param name="scriptable" value="true" />                                            
+				</applet>
+				<div class="canto sup_esq"></div>
+				<div class="canto sup_dir"></div>
+				<div class="canto inf_esq"></div>
+				<div class="canto inf_dir"></div>
+				<div id="associacao"></div>
+			</div>
+			<div id="comandos">
+
+				<table>
+					<tr>
+						<td style="width: 250px; vertical-align: top;">
+							<input type="checkbox" id="checkBoxInfo" onClick="javascript:mostrarInfo();"> Informações de Z<sub>1</sub> e Z<sub>2</sub>
+							<br/>
+							Mostrar
+							<br/>
+							<input type="checkbox" id="checkBoxReta" onClick="javascript:mostrarTudo();"> Reta suporte
+							<br/>
+							<input type="checkbox" id="checkBoxTamanho" onClick="javascript:mostrarTudo();"> Tamanho dos lados
+							<br/>
+							<input type="checkbox" id="checkBoxCoord" onClick="javascript:mostrarTudo();"> Número complexo
+						</td>
+						<td style="width: 250px; vertical-align: top;">
+							Pontos
+							<br />
+							<input type="radio" id="AB" name="ponto" onClick="javascript:mostrarTudo();"> A, B e A', B'
+							<br />
+							<input type="radio" id="BC" name="ponto" onClick="javascript:mostrarTudo();"> B, C e B', C'
+							<br />							
+							<input type="radio" id="AC" name="ponto" onClick="javascript:mostrarTudo();"> A, C e A', C'
+						</td>
+					</tr>
+				</table>
+				<br class="limpador">
+				<br class="limpador">
+			</div>
+		</div>
+		
+		<div id="associado"></div>
+		
+
+		<div id="ferramentas">
+			<a href="javascript:;" onclick="return false;" id="link_notas"><span class="escondido">referencias</span></a>
+			<a href="javascript:;" onclick="return false;" id="link_bloco"><span class="escondido">bloco de notas</span></a>
+			<a href="javascript:;" id="link_calculadora" onclick="javascript:calculadora();"><span class="escondido">calculadora</span></a>
+			<a href="javascript:setActiveStyleSheet('grande');" id="link_acessibilidade"><span class="escondido">acessibilidade</span></a>
+		</div>
+		<div id="calc" class="escondido"></div>
+	</body>
+</html>

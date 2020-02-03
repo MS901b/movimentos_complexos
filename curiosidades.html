@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns = "http://www.w3.org/1999/xhtml"  xml:lang = "pt-br"  lang = "pt-br">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" /> 
+		<link rel="stylesheet" type="text/css" href="css/curiosidade_transicao.css" media="screen, projection" title="normal"/>
+		<link rel="alternate stylesheet" type="text/css" href="css/curiosidade_transicao2.css" media="screen, projection" title="grande"/>
+		
+		
+		<link rel="stylesheet" type="text/css" href="css/popup.css" media="screen, projection" />
+		<link rel="stylesheet" type="text/css" href="css/notas.css" media="screen, projection" />
+		<link rel="stylesheet" type="text/css" href="css/bloco.css" media="screen, projection" />
+		<link rel="stylesheet" type="text/css" href="css/calculadora.css" media="screen, projection" />
+
+		
+		<script type="text/javascript" src="scripts/protoaculous.js"></script>
+		<script type="text/javascript" src="scripts/AC_RunActiveContent.js"></script>
+		<script type="text/javascript" src="scripts/popup.js"></script>
+		<script type="text/javascript" src="scripts/notas.js"></script>
+		<script type="text/javascript" src="scripts/bloco.js"></script>
+		<script type="text/javascript" src="scripts/calculadora.js"></script>
+		<script type="text/javascript" src="scripts/curiosidades.js"></script>
+		
+		<script type="text/javascript" src="scripts/interface.js"></script>
+		<script type="text/javascript" src="scripts/referencias.js"></script>
+		<script type="text/javascript" src="scripts/curiosidades.js"></script>
+		
+		<script type="text/javascript" src="scripts/m3_geral.js"></script>
+		<script type="text/javascript" src="scripts/introducao_conteudo.js"></script>
+		<script type="text/javascript" src="scripts/funcoes_estilizadas.js"></script>
+		
+		<script type="text/javascript">
+			var PosicaoAtual = {Atividade: 0, Parte: 0};
+
+			document.observe('dom:safeLoaded', function(ev){
+				setResp('curiosidade_c1',2);	//Comecou a fazer a atividade_1
+			});
+		</script>
+		
+		<title>Movimentos Complexos</title>
+	</head>
+	<body>
+
+	<object id="SalvaLocal" name="SalvaLocal" type="application/x-shockwave-flash" data="applets/SalvaLocal.swf" width="1" height="1">
+		<param name="menu" value="false" />
+		<param name="movie" value="applets/SalvaLocal.swf" />
+	</object>
+	
+		<div id="container">
+			<div id="cabecalho">
+				<div id="onde_estou">
+					<div class="curiosidade">&nbsp;</div>
+					<h1>Movimentos Complexos</h1> <img src="img_layout/setinha-cabecalho.gif" alt=""/> <h2>Curiosidades</h2>
+				</div>
+				<div id="logo"></div>
+				<div id="links">
+					<a href="mapa.html">Mapa</a>
+					<a href="introducao.html">Introdução</a>
+					<a href="index.html">Início</a>
+				</div>
+				<br class="limpador" />
+			</div>
+			
+			<ul id="curiosidades">
+				<li id="c1" class="curiosidade" ><a href="javascript:navegaCuriosidade('c1');">1</a></li>
+			</ul>
+			
+			<div id="principal">
+				<div id="conteudo">					
+					<div id="curiosidadec1" class="texto">
+						<h2> Números Complexos e o plano de Argand-Gauss </h2>
+						<p>
+							Os números complexos surgiram quando os matemáticos buscavam fórmulas eficientes de se encontrar raízes de polinômios de terceiro grau, no final do século XVIII. A grande questão era se esses números realmente permitiriam avanço na teoria algébrica. Um dos matemáticos que contribuíram para a definição desses números foi Jean Robert Argand, que publicou um ensaio sobre a representação geométrica dos números complexos. Contudo, quem sistematizou os conceitos foi o matemático alemão Carl F. Gauss, que formulou uma equivalência entre a geometria plana e os números complexos. Dito com outras palavras, Gauss associava a cada número complexo um ponto no plano cartesiano.
+						</p>
+						<p>
+							Essa ideia proposta por Gauss facilitou o estudo dos números complexos, que, até então, eram considerados números misteriosos.
+						</p>
+						<p>
+							O plano de Argand-Gauss é, sem dúvida, muito útil, pois, através dele, pode-se associar a cada número complexo da forma a+bi um par ordenado do plano cartesiano, no caso (a,b). Em suma, o plano consiste de duas retas perpendiculares entre si, com a reta vertical representando a parte imaginária do número, ao passo que a horizontal representa sua parte real.
+						</p>
+						<p>
+							<img src="imgs/grafico_alterado.jpg" />
+						</p>
+						<p>
+							Outras interpretações podem ser obtidas com essa maneira de se representar os números complexos. Com base no plano representado, calcula-se a distância &#961; entre os pontos O e Z. Observe que basta aplicar o teorema de Pitágoras no triângulo retângulo. Dessa forma, segue-se que:
+						</p>
+						<p>
+							<img src="imgs/equacaoRho.png" alt="equacao Rho" />
+						</p>
+						<p>
+							O módulo de um número complexo Z é representado pela letra &#961;, mas pode ser representado por |Z|. O ângulo &#952; (0 &#8804; &#952; &#8804; 2&#960;), formado pelo eixo real e o segmento de reta O&#773;Z&#773;, é chamado de "argumento de Z" e é indicado por arg(Z). Com base nessas definições, é possível estabelecer as seguintes relações na interpretação geométrica dos complexos:
+						</p>
+						<p>
+							<img src="imgs/seno_teta.png" alt="seno teta" />
+						</p>
+						<p>
+							<img src="imgs/cos_teta.png" alt="cos teta" />
+						</p>
+						<p>
+							Segue, assim, que é possível representar um número complexo nesse plano por suas coordenadas polares:
+						</p>
+						<p>
+							<img src="imgs/equacaoZ.png" alt="equacao Z" />
+						</p>
+						<p>
+							Essa forma de representar os números complexos possibilita uma vasta aplicação do mesmo na matemática, engenharias e física.
+						</p>
+						<p>
+							Você pode ler mais detalhes sobre essas duas representações no livro "Matemática Contexto e Aplicações", volume 3.
+						</p>
+						
+						<div id="voltar" class="a_esquerda">
+							<div class="a_direita">
+								<div class="a_esquerda apontador">
+									<a id="voltar_curiosidade" href="javascript:history.go(-1);">Voltar</a>
+								</div>
+								<div class="a_esquerda seta_apontador"></div>
+							</div>
+						</div>
+						<br class="limpador" />
+					</div>
+				</div>
+			</div>
+			<br class="limpador" />
+			<div id="rodape">
+				<a href="http://m3.mat.br" target="_blank">Sobre o Matemática Multimídia</a>
+			</div>
+		</div>
+		
+		<div id="ferramentas">
+			<a href="javascript:;" onclick="return false;" id="link_notas"><span class="escondido">referencias</span></a>
+			<a href="javascript:;" onclick="return false;" id="link_bloco"><span class="escondido">bloco de notas</span></a>
+			<a href="javascript:;" id="link_calculadora" onclick="javascript:calculadora();"><span class="escondido">calculadora</span></a>
+			<a href="javascript:setActiveStyleSheet('grande');" id="link_acessibilidade"><span class="escondido">acessibilidade</span></a>
+		</div>
+		<div id="calc" class="escondido"></div>
+
+	</body>
+</html>

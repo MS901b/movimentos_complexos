@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recurso>
+    <titulo>Movimentos Complexos</titulo>
+    <descricao>Neste software, utilizando o conceito e propriedades de números complexos, são estudadas as transformações de translação, rotação, dilatação e contração no plano complexo. O estudo é realizado por meio da análise do efeito dessas transformações em triângulos e, em especial, são utilizadas as interpretações geométricas das operações de números complexos.</descricao>
+    <estado>finalizado</estado>
+    <imagem>introducao.jpg</imagem>
+    <tipo>software educacional</tipo>
+    <objetivos>Estudar o efeito da translação, rotação, dilatação e contração no plano complexo;
+Aplicar os conceitos e propriedades de número complexo;
+Utilizar as propriedades geométricas das operações de números complexos.</objetivos>
+    <observacoes>Duração: uma aula dupla</observacoes>
+    <nivel>Ensino Médio</nivel>
+    <componente>Matemática</componente>
+    <temas>Números e funções, Geometria e Medidas</temas>
+    <autores>Claudina Izepe Rodrigues, Leonardo Barichello e Rita Guimarães</autores>
+    <palavras_chaves>números complexos, números imaginários, transformações no plano, isometria, simetrias,</palavras_chaves>
+    <assunto>Transformações: translação, rotação, dilatação e contração; Números complexos: operações e propriedades;</assunto>
+</recurso>
+
+
+
+
