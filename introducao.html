@@ -104,54 +104,6 @@
 					</div>
 					<!--<div id="imgs_abertura">-->
 						<!--<img src="imgs/introducao.jpg">-->
-						<div id="applet">
-							<div id="borda_applet" class="altura_applet_5 borda sem_fundo">
-								<div id="ggbApplet"></div>
-								<script>
-								  var ggbApp = new GGBApplet({"appName": "classic",
-								  "width": 519, "height": 460,
-								  "filename": "applets/complexos_introducao.ggb",
-								  "showResetIcon": false,
-								  "enableRightClick": false,
-								  "enableShiftDragZoom": false,
-								  "showMenuBar": false,
-								  "showToolBar": false,
-								  "showToolBarHelp": false,
-								  "showAlgebraInput": false,
-								  "useBrowserForJS": true
-								  }, true);
-								  window.addEventListener("load", function() {
-								  ggbApp.inject('ggbApplet');
-								  });
-								</script>
-								<div class="canto sup_esq"></div>
-								<div class="canto sup_dir"></div>
-								<div class="canto inf_esq"></div>
-								<div class="canto inf_dir"></div>
-								<div id="associacao"></div>
-							</div>
-							<div id="comandos">
-								<table >
-									<tr >
-										<td style="width: 250px; vertical-align: top;">
-											<input type="checkbox" id="checkBoxInfo" onClick="javascript:mostrarInfo();"> Informações de Z<sub>1</sub> e Z<sub>2</sub>
-											<br />
-											<input type="checkbox" id="checkBoxCoord" onClick="javascript:mostrarCoordenadas();"> Mostrar número complexo
-										</td>
-										<td style="width: 250px; vertical-align: top;">
-											Pontos
-											<br />
-											<input type="radio" id="AB" name="ponto" onClick="javascript:mostrarCoordenadas();"> A, B e A', B'
-											<br />
-											<input type="radio" id="BC" name="ponto" onClick="javascript:mostrarCoordenadas();"> B, C e B', C'
-											<br />
-											<input type="radio" id="AC" name="ponto" onClick="javascript:mostrarCoordenadas();"> A, C e A', C'
-											<br />
-										</td>
-									</tr>
-								</table>
-							</div>
-						</div>
 
 					<br class="limpador" />
 				</div>
@@ -161,6 +113,42 @@
 				<a href="http://m3.mat.br" target="_blank">Sobre o Matemática Multimídia</a>
 			</div>
 		</div>
+
+		<div id="applet">
+				<div id="borda_applet" class="altura_applet_5 borda sem_fundo">
+					<div id="ggbApplet"></div>
+					<script>
+							var ggbApp = new GGBApplet({"appName": "classic",
+							"width": 519, "height": 424,
+							"filename": "applets/complexos_introducao.ggb",
+							"showResetIcon": false,
+							"enableRightClick": false,
+							"enableShiftDragZoom": false,
+							"showMenuBar": false,
+							"showToolBar": false,
+							"showToolBarHelp": false,
+							"showAlgebraInput": false,
+							"useBrowserForJS": true
+							}, true);
+							window.addEventListener("load", function() {
+							ggbApp.inject('ggbApplet');
+							});
+					</script>
+					<div class="canto sup_esq"></div>
+					<div class="canto sup_dir"></div>
+					<div class="canto inf_esq"></div>
+					<div class="canto inf_dir"></div>
+					<div id="associado"></div>
+				</div>
+
+				<div id="comandos">
+					Z = <input style="border: 1px solid black; font-size: 15px;" size="29" id="respostaZ" type="text"/></td>
+					<input type="button" id="botao_callb" class="botao botao_medio" value="Ok" onclick="javascript:corrigirExpressao();"/>
+					<br><br>
+					<p><span id="msgDinamicaEspecifica" style="color : #ff0000;"> </span></p>
+				</div>
+		</div>
+
 		<div id="ferramentas">
 			<a href="javascript:;" onclick="return false;" id="link_notas"><span class="escondido">referencias</span></a>
 			<a href="javascript:;" onclick="return false;" id="link_bloco"><span class="escondido">bloco de notas</span></a>
