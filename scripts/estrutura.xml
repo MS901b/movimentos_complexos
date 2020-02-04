@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <software nome="complexos">
-	
+
 	<curiosidades>
 		<curiosidade>
 			<titulo>Números complexos e o plano de Argand-Gauss.</titulo>
 			<id>c1</id>
 		</curiosidade>
+		<estadoinicial>1</estadoinicial>
 	</curiosidades>
 
 	<!-- 1: 1a Atividade -->
-	<item>
+	<item><id>a1</id>
 		<tipo>atividade</tipo>
 		<rotulo>1</rotulo>
 		<nome>Os Movimentos</nome>
@@ -18,10 +19,11 @@
 			<coluna>1</coluna>
 			<altura>1</altura>
 		</posicao>
+		<estadoinicial>1</estadoinicial>
 	</item>
-	
+
 	<!-- 3: Desafio -->
-	<item>
+	<item><id>d1</id>
 		<tipo>desafio</tipo>
 		<nome>Desafio</nome>
 		<descricao>Neste desafio, todos os três movimentos estudados até aqui (rotação, dilatação e translação) podem ocorrer simultaneamente. Você é capaz de obter os valores de Z1 e Z2 que causaram as transformações no triângulo?</descricao>
@@ -30,8 +32,9 @@
 			<altura>1</altura>
 		</posicao>
 		<ligacoes>
-			<com>1</com>
+			<com>a1</com>
 		</ligacoes>
+		<estadoinicial>1</estadoinicial>
 	</item>
-		
+
 </software>

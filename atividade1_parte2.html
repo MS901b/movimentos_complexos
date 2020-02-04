@@ -26,6 +26,7 @@
 
 		<script type="text/javascript" src="scripts/AC_RunActiveContent.js"></script>
 		<script type="text/javascript" src="scripts/protoaculous.js"></script>
+		<script type="text/javascript" src="scripts/salvaLocal.js"></script>
 		<script type="text/javascript" src="scripts/popup.js"></script>
 		<script type="text/javascript" src="scripts/notas.js"></script>
 		<script type="text/javascript" src="scripts/bloco.js"></script>
@@ -86,10 +87,7 @@
 
 			<div id="software">
 				<div id="conteudo">
-					<object id="SalvaLocal" name="SalvaLocal" type="application/x-shockwave-flash" data="applets/SalvaLocal.swf" width="1" height="1">
-						<param name="menu" value="false" />
-						<param name="movie" value="applets/SalvaLocal.swf" />
-					</object>
+					
 
 					<div class="texto_solto">
 						<p>
@@ -150,7 +148,7 @@
 			</div>
 			<br class="limpador" />
 			<div id="rodape">
-				<a href="http://m3.mat.br" target="_blank">Sobre o Matemática Multimídia</a>
+				<a href="http://m3.ime.unicamp.br" target="_blank">Sobre o Matemática Multimídia</a>
 			</div>
 		</div>
 		<div id="applet">
@@ -192,12 +190,12 @@
 							<br />
 							<input type="radio" id="AB" name="reta" onClick="javascript:mostrarRetaSuporte();"> A, B e A', B'
 							<br />
-							<input type="radio" id="BC" name="reta" onClick="javascript:mostrarRetaSuporte();"> B, C e B', C'
+							<input type="radio" id="BC" name="reta" onClick="javascript:mostrarRetaSuporte();m3.ime.unicamp.br"> B, C e B', C'
 							<br />
 							<input type="radio" id="AC" name="reta" onClick="javascript:mostrarRetaSuporte();"> A, C e A', C'
 						</td>
 					</tr>
-				</table>
+				</table>m3.ime.unicamp.br
 			</div>
 		</div>
 
@@ -207,8 +205,8 @@
 		<div id="ferramentas">
 			<a href="javascript:;" onclick="return false;" id="link_notas"><span class="escondido">referencias</span></a>
 			<a href="javascript:;" onclick="return false;" id="link_bloco"><span class="escondido">bloco de notas</span></a>
-			<a href="javascript:;" id="link_calculadora" onclick="javascript:calculadora();"><span class="escondido">calculadora</span></a>
-			<a href="javascript:setActiveStyleSheet('grande');" id="link_acessibilidade"><span class="escondido">acessibilidade</span></a>
+			<!--<a href="javascript:;" id="link_calculadora" onclick="javascript:calculadora();"><span class="escondido">calculadora</span></a>
+			<a href="javascript:setActiveStyleSheet('grande');" id="link_acessibilidade"><span class="escondido">acessibilidade</span></a>-->
 		</div>
 		<div id="calc" class="escondido"></div>
 	</body>

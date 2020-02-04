@@ -1,4 +1,4 @@
-var SalvaLocalLoaded = false;
+var SalvaLocalLoaded = true;
 var GGBLoaded = false;
 var HTMLLoaded = false;
 
@@ -24,13 +24,13 @@ function InitOnLoad(){
 	switch (PosicaoAtual.Parte) {
 		case 0://Parte1
 			registerListeners();
-			
+
 			/* Traz respostas do aluno */
 			$('parte1_q1_a').value = valida(getResp('atividade1_parte1_q1_a'));
 			Event.observe('parte1_q1_a', 'change', function(evento){
 				setResp('atividade1_parte1_q1_a',$('parte1_q1_a').value);
 			});
-			
+
 			$('parte1_q2_b').value = valida(getResp('atividade1_parte1_q2_b'));
 			Event.observe('parte1_q2_b', 'change', function(evento){
 				setResp('atividade1_parte1_q2_b',$('parte1_q2_b').value);
@@ -57,7 +57,7 @@ function InitOnLoad(){
 			Event.observe('parte1_q4_a_4', 'change', function(evento){
 				setResp('atividade1_parte1_q4_a',$('parte1_q4_a_4').value);
 			});
-			
+
 			break;
 		case 1://Parte2
 			/* Traz respostas do aluno */
@@ -74,7 +74,7 @@ function InitOnLoad(){
 			Event.observe('parte2_q6_b_2', 'change', function(evento){
 				setResp('atividade1_parte2_q6_b',$('parte2_q6_b_2').value);
 			});
-			
+
 			$('parte2_q7_a_11').value = valida(getResp('atividade1_parte2_q7_a_11'));
 			Event.observe('parte2_q7_a_11', 'change', function(evento){
 				setResp('atividade1_parte2_q7_a_11',$('parte2_q7_a_11').value);
@@ -116,9 +116,9 @@ function InitOnLoad(){
 			Event.observe('parte2_q8_a_4', 'change', function(evento){
 				setResp('atividade1_parte2_q8_a',$('parte2_q8_a_4').value);
 			});
-			
+
 			break;
-			
+
 		case 2://Parte3
 			/* Traz respostas do aluno */
 			$('parte3_q9_a_11').value = valida(getResp('atividade1_parte3_q9_a_11'));
@@ -130,37 +130,37 @@ function InitOnLoad(){
 			Event.observe('parte3_q9_a_21', 'change', function(evento){
 				setResp('atividade1_parte3_q9_a_21',$('parte3_q9_a_21').value);
 			});
-			
+
 			$('parte3_q9_b_11').value = valida(getResp('atividade1_parte3_q9_b_11'));
 			Event.observe('parte3_q9_b_11', 'change', function(evento){
 				setResp('atividade1_parte3_q9_b_11',$('parte3_q9_b_11').value);
 			});
-			
+
 			$('parte3_q9_b_21').value = valida(getResp('atividade1_parte3_q9_b_21'));
 			Event.observe('parte3_q9_b_21', 'change', function(evento){
 				setResp('atividade1_parte3_q9_b_21',$('parte3_q9_b_21').value);
 			});
-			
+
 			$('parte3_q9_c_11').value = valida(getResp('atividade1_parte3_q9_c_11'));
 			Event.observe('parte3_q9_c_11', 'change', function(evento){
 				setResp('atividade1_parte3_q9_c_11',$('parte3_q9_c_11').value);
 			});
-			
+
 			$('parte3_q9_c_21').value = valida(getResp('atividade1_parte3_q9_c_21'));
 			Event.observe('parte3_q9_c_21', 'change', function(evento){
 				setResp('atividade1_parte3_q9_c_21',$('parte3_q9_c_21').value);
 			});
-			
+
 			$('parte3_q9_d').value = valida(getResp('atividade1_parte3_q9_d'));
 			Event.observe('parte3_q9_d', 'change', function(evento){
 				setResp('atividade1_parte3_q9_d',$('parte3_q9_d').value);
 			});
 
 			break;
-			
+
 		case 3://Parte4
 			initParte4();
-			
+
 			/* Traz respostas do aluno */
 			$('parte4_q10_a_1').checked=(getResp('atividade1_parte4_q10_a')=='sim');
 			$('parte4_q10_a_2').checked=(getResp('atividade1_parte4_q10_a')=='nao');
@@ -175,7 +175,7 @@ function InitOnLoad(){
 			Event.observe('parte4_q10_b', 'change', function(evento){
 				setResp('atividade1_parte4_q10_b',$('parte4_q10_b').value);
 			});
-			
+
 			$('parte4_q10_c_1').checked=(getResp('atividade1_parte4_q10_c')=='sim');
 			$('parte4_q10_c_2').checked=(getResp('atividade1_parte4_q10_c')=='nao');
 			Event.observe('parte4_q10_c_1', 'change', function(evento){
@@ -184,17 +184,17 @@ function InitOnLoad(){
 			Event.observe('parte4_q10_c_2', 'change', function(evento){
 				setResp('atividade1_parte4_q10_c',$('parte4_q10_c_2').value);
 			});
-			
+
 			$('parte4_q10_d_11').value = valida(getResp('atividade1_parte4_q10_d_11'));
 			Event.observe('parte4_q10_d_11', 'change', function(evento){
 				setResp('atividade1_parte4_q10_d_11',$('parte4_q10_d_11').value);
 			});
 
 			break;
-			
+
 		case 4://Parte5
 			initParte5();
-			
+
 			/* Traz respostas do aluno */
 			$('parte5_q11_a_1').checked=(getResp('atividade1_parte5_q11_a')=='sim');
 			$('parte5_q11_a_2').checked=(getResp('atividade1_parte5_q11_a')=='nao');
@@ -204,7 +204,7 @@ function InitOnLoad(){
 			Event.observe('parte5_q11_a_2', 'change', function(evento){
 				setResp('atividade1_parte5_q11_a',$('parte5_q11_a_2').value);
 			});
-			
+
 			$('parte5_q11_b_1').checked=(getResp('atividade1_parte5_q11_b')=='sim');
 			$('parte5_q11_b_2').checked=(getResp('atividade1_parte5_q11_b')=='nao');
 			Event.observe('parte5_q11_b_1', 'change', function(evento){
@@ -215,11 +215,11 @@ function InitOnLoad(){
 			});
 
 			break;
-		
+
 		default://Parte6
 			apagaSorteioGuardado();
 			randomTransformacao();
-			
+
 			/*
 			$('parte6_q13_a_1').checked=(getResp('atividade1_parte6_q13_a')=='complemento');
 			$('parte6_q13_a_2').checked=(getResp('atividade1_parte6_q13_a')=='suplemento');
@@ -237,7 +237,7 @@ function InitOnLoad(){
 			Event.observe('parte6_q13_a_4', 'change', function(evento){
 				setResp('atividade1_parte6_q13_a',$('parte6_q13_a_4').value);
 			});
-			
+
 			$('parte6_q13_b_11').value = valida(getResp('atividade1_parte6_q13_b_11'));
 			Event.observe('parte6_q13_b_11', 'change', function(evento){
 				setResp('atividade1_parte6_q13_b_11',$('parte6_q13_b_11').value);
@@ -302,12 +302,12 @@ function InitOnLoad(){
 				setResp('atividade1_parte6_q15_b_21',$('parte6_q15_b_21').value);
 			});
 			*/
-			
+
 			break;
 	}
 
 	radioChecked();
-	
+
 }
 
 function tudoCerto() {
@@ -348,7 +348,7 @@ function registerListeners() {
 
 function updateListener(objName) {
 	var applet = document.ggbApplet;
-	
+
 	var z1Real = applet.getXcoord('Z_1');
 	z1Real = roundNumber(z1Real,2);
 	var z1Imaginario = applet.getYcoord('Z_1');
@@ -364,7 +364,7 @@ function updateListener(objName) {
 
 	$('z2Dinamico').update(z2Real + ( (z2Imaginario>=0)?'+':'' ) + z2Imaginario+'i');
 	$('z2DinamicoFormula').update(z2Real + ( (z2Imaginario>=0)?'+':'' ) + z2Imaginario+'i');
-	
+
 	var aLinhaReal = applet.getXcoord("A'");
 	aLinhaReal = roundNumber(aLinhaReal,2);
 	var aLinhaImaginario = applet.getYcoord("A'");
@@ -372,7 +372,7 @@ function updateListener(objName) {
 	//alert(applet.getXcoord('aLinha'));
 	//alert(applet.getYcoord('aLinha'));
 	$('aLinhaDinamico').update(aLinhaReal + ( (aLinhaImaginario>=0)?'+':'' ) + aLinhaImaginario+'i');
-	
+
 }
 
 
@@ -389,7 +389,7 @@ function selecionou_q_12() {
 	applet.setFixed('Z_2',false);
 	applet.setColor('Z_2',0,0,255);
 }
- 
+
 function selecionou_q_13() {
 	switch (Number(getResp('transformacao1'))) {
 		case 0://Rotacao
@@ -422,7 +422,7 @@ function selecionou_q_14() {
 			$('msgErroDinamicaQ14B').update(msgErroTranslacao);
 			break;
 	}
-	
+
 }
 
 function selecionou_q_15() {
@@ -451,7 +451,7 @@ function corrige_q_1_a(valor) {
 }
 function corrige_q_2_a(valor) {
 	var applet = document.ggbApplet;
-	return [ Math.abs(applet.getXcoord('Z_1')-2)<0.1 && Math.abs(applet.getYcoord('Z_1')-1)<0.1 && 
+	return [ Math.abs(applet.getXcoord('Z_1')-2)<0.1 && Math.abs(applet.getYcoord('Z_1')-1)<0.1 &&
 			 Math.abs(applet.getXcoord('Z_2')-1)<0.1 && Math.abs(applet.getYcoord('Z_2')-1)<0.1 ];
 }
 
@@ -465,7 +465,7 @@ function corrige_q_2_b(valor) {
 
 function corrige_q_3_a(valor) {
 	var applet = document.ggbApplet;
-	return [ Math.abs(applet.getXcoord('Z_1')-2)<0.1 && Math.abs(applet.getYcoord('Z_1')-1)<0.1 && 
+	return [ Math.abs(applet.getXcoord('Z_1')-2)<0.1 && Math.abs(applet.getYcoord('Z_1')-1)<0.1 &&
 			 Math.abs(applet.getXcoord('Z_2')-1)<0.1 && Math.abs(applet.getYcoord('Z_2')-2)<0.1 ];
 }
 
@@ -483,7 +483,7 @@ function corrige_q_4(valor) {
 
 function corrige_q_5(valor) {
 	var applet = document.ggbApplet;
-	return [ Math.abs(applet.getXcoord('Z_1')-1)<0.1 && Math.abs(applet.getYcoord('Z_1')-0)<0.1 && 
+	return [ Math.abs(applet.getXcoord('Z_1')-1)<0.1 && Math.abs(applet.getYcoord('Z_1')-0)<0.1 &&
 			 Math.abs(applet.getXcoord('Z_2')-0)<0.1 && Math.abs(applet.getYcoord('Z_2')-0)<0.1 ];
 }
 
@@ -583,8 +583,8 @@ function corrige_q_11_b(valor) {
 
 function corrige_q_12(valor) {
 	var applet = document.ggbApplet;
-	return[ (Math.abs(applet.getXcoord("A'")-0)<0.1 && Math.abs(applet.getYcoord("A'")-0)<0.1) || 
-			(Math.abs(applet.getXcoord("B'")-0)<0.1 && Math.abs(applet.getYcoord("B'")-0)<0.1) || 
+	return[ (Math.abs(applet.getXcoord("A'")-0)<0.1 && Math.abs(applet.getYcoord("A'")-0)<0.1) ||
+			(Math.abs(applet.getXcoord("B'")-0)<0.1 && Math.abs(applet.getYcoord("B'")-0)<0.1) ||
 			(Math.abs(applet.getXcoord("C'")-0)<0.1 && Math.abs(applet.getYcoord("C'")-0)<0.1) ];
 }
 
@@ -594,7 +594,7 @@ function corrige_q_13_a(valor) {
 		case 0:
 			return [valor[0]?true:null, valor[1]?false:null, valor[2]?false:null, valor[3]?false:null];
 			break;
-			
+
 		case 1:
 			return [valor[0]?false:null, valor[1]?false:null, valor[2]?true:null, valor[3]?false:null];
 			break;
@@ -616,7 +616,7 @@ function corrige_q_13_b(valor) {
 			var r1 = getResp('r1Rotacao');
 			var r2 = getResp('r2Rotacao');
 			break;
-			
+
 		case 1:
 			var r1 = getResp('r1Dilatacao');
 			var r2 = getResp('r2Dilatacao');
@@ -630,7 +630,7 @@ function corrige_q_13_b(valor) {
 
 	//console.log(r1);
 	//console.log(r2);
-	
+
 	return[valor[0].length==0?false:comparaComplexo(valor[0]+'+0*i',r1), valor[1].length==0?false:comparaComplexo(valor[1]+'+0*i',r2)];
 
 }
@@ -641,7 +641,7 @@ function corrige_q_14_a(valor) {
 		case 0:
 			return [valor[0]?true:null, valor[1]?false:null, valor[2]?false:null, valor[3]?false:null];
 			break;
-			
+
 		case 1:
 			return [valor[0]?false:null, valor[1]?false:null, valor[2]?true:null, valor[3]?false:null];
 			break;
@@ -663,7 +663,7 @@ function corrige_q_14_b(valor) {
 			var r1 = getResp('r1Rotacao');
 			var r2 = getResp('r2Rotacao');
 			break;
-			
+
 		case 1:
 			var r1 = getResp('r1Dilatacao');
 			var r2 = getResp('r2Dilatacao');
@@ -676,7 +676,7 @@ function corrige_q_14_b(valor) {
 	}
 	//console.log(r1);
 	//console.log(r2);
-	
+
 	return[valor[0].length==0?false:comparaComplexo(valor[0]+'+0*i',r1), valor[1].length==0?false:comparaComplexo(valor[1]+'+0*i',r2)];
 }
 
@@ -686,7 +686,7 @@ function corrige_q_15_a(valor) {
 		case 0:
 			return [valor[0]?true:null, valor[1]?false:null, valor[2]?false:null, valor[3]?false:null];
 			break;
-			
+
 		case 1:
 			return [valor[0]?false:null, valor[1]?false:null, valor[2]?true:null, valor[3]?false:null];
 			break;
@@ -708,7 +708,7 @@ function corrige_q_15_b(valor) {
 			var r1 = getResp('r1Rotacao');
 			var r2 = getResp('r2Rotacao');
 			break;
-			
+
 		case 1:
 			var r1 = getResp('r1Dilatacao');
 			var r2 = getResp('r2Dilatacao');
@@ -726,7 +726,7 @@ function corrige_q_15_b(valor) {
 
 /*****************************
  *	Funcoes de Valor Inicial *
- *****************************/	
+ *****************************/
 function set_inicial_q7() {
 	var applet = document.ggbApplet;
 	applet.setFixed('Z_1',true);
@@ -767,7 +767,7 @@ function set_inicial_q9() {
 				};
 		var tmp = new PopupCallback(this.link,Perg.conteudo,Perg.layout, Perg.largura, Perg.callback, Perg.respostas, this);
 		tmp.abre();
-		
+
 		$('p3_q9').update('<br>Valor de Z<sub style="color: red;">1</sub> inválido.');
 		$('p3_q9').setStyle({
 					color: 'red'
@@ -786,7 +786,7 @@ function unset_inicial_q9() {
 	adicionaEsperando({Parte: 2, Questao:'parte3_q9', Item: 2});
 	adicionaEsperando({Parte: 2, Questao:'parte3_q9', Item: 3});
 	$('p3_q9').update('');
-	
+
 }
 
 function set_inicial_q10() {
@@ -837,7 +837,7 @@ function verificaZ2NaoZero()
 	if ( (applet.getXcoord("Z_2"))!=0 || (applet.getYcoord('Z_2')!=0) )
 	{
 		resp = true;
-	}	
+	}
 	return resp;
 
 }
@@ -860,12 +860,12 @@ function set_inicial_q11() {
 				};
 		var tmp = new PopupCallback(this.link,Perg.conteudo,Perg.layout, Perg.largura, Perg.callback, Perg.respostas, this);
 		tmp.abre();
-		
+
 		$('p5_q11').update('<br>Valor de Z<sub style="color: red;">2</sub> inválido.');
 		$('p5_q11').setStyle({
 					color: 'red'
 					});
-		
+
 		return false;
 	}
 }
