@@ -2129,15 +2129,6 @@ function irProMapa()
 	location.href= 'mapa.html';
 }
 
-function FlashTag(swf, id, largura, altura)
-{
-	return '<object type="application/x-shockwave-flash" data="applets/Mapinha.swf" width="275" height="80"><param name="menu" value="false" /><param name="movie" value="applets/Mapinha.swf" /></object>';
-
-	var obj = new Element('object', {type:'application/x-shockwave-flash', data: swf, width: largura*60+(largura-1)*20, height: altura*60+(altura-1)*20});
-	obj.insert(new Element('param', {name: 'menu', value: 'false'}));
-	obj.insert(new Element('param', {name: 'movie', value: swf}));
-	return obj;
-}
 
 function setActiveStyleSheet(title)
 {
@@ -2155,8 +2146,6 @@ function setActiveStyleSheet(title)
 
 	if (title == 'grande')
 		$('link_acessibilidade').href = 'javascript:setActiveStyleSheet("normal");';
-	else
-		$('link_acessibilidade').href = 'javascript:setActiveStyleSheet("grande");';
 
 }
 
