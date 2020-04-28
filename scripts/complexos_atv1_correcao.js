@@ -634,8 +634,8 @@ function corrige_q_13_b(valor) {
             break;
     }
 
-    //console.log(r1);
-    //console.log(r2);
+    console.log(r1);
+    console.log(r2);
 
     return [valor[0].length == 0 ? false : comparaComplexo(valor[0] + '+0*i', r1), valor[1].length == 0 ? false : comparaComplexo(valor[1] + '+0*i', r2)];
 
