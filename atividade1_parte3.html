@@ -1,194 +1,204 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns = "http://www.w3.org/1999/xhtml"  xml:lang = "pt-br"  lang = "pt-br">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
 
-		<!-- Geogebra -->
-		<meta name=viewport content="width=device-width,initial-scale=1">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+
+    <!-- Geogebra -->
+    <meta name=viewport content="width=device-width,initial-scale=1">
     <script src="https://www.geogebra.org/apps/deployggb.js"></script>
 
-		<link rel="stylesheet" type="text/css" href="css/estilo.css" media="screen, projection" title="normal"/>
-		<link rel="alternate stylesheet"  type="text/css" href="css/estilo2.css" title="grande" />
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" media="screen, projection" title="normal" />
+    <link rel="alternate stylesheet" type="text/css" href="css/estilo2.css" title="grande" />
 
-		<link rel="stylesheet" type="text/css" href="css/popup.css" media="screen, projection" />
-		<link rel="stylesheet" type="text/css" href="css/notas.css" media="screen, projection" />
-		<link rel="stylesheet" type="text/css" href="css/bloco.css" media="screen, projection" />
-		<link rel="stylesheet" type="text/css" href="css/calculadora.css" media="screen, projection" />
+    <link rel="stylesheet" type="text/css" href="css/popup.css" media="screen, projection" />
+    <link rel="stylesheet" type="text/css" href="css/notas.css" media="screen, projection" />
+    <link rel="stylesheet" type="text/css" href="css/bloco.css" media="screen, projection" />
+    <link rel="stylesheet" type="text/css" href="css/calculadora.css" media="screen, projection" />
 
-		<!--[if IE 7]>
+    <!--[if IE 7]>
 			<link rel="stylesheet" type="text/css" href="css/estilo_ie7.css" media="screen, projection" />
 		<![endif]-->
-		<!--[if lte IE 6]>
+    <!--[if lte IE 6]>
 			<link rel="stylesheet" type="text/css" href="css/estilo_ie6.css" media="screen, projection" />
 		<![endif]-->
 
-		<script type="text/javascript" src="scripts/AC_RunActiveContent.js"></script>
-		<script type="text/javascript" src="scripts/protoaculous.js"></script>
-		<script type="text/javascript" src="scripts/salvaLocal.js"></script>
-		<script type="text/javascript" src="scripts/popup.js"></script>
-		<script type="text/javascript" src="scripts/notas.js"></script>
-		<script type="text/javascript" src="scripts/bloco.js"></script>
-		<script type="text/javascript" src="scripts/calculadora.js"></script>
-		<script type="text/javascript" src="scripts/rolagem.js"></script>
+    <script type="text/javascript" src="scripts/AC_RunActiveContent.js"></script>
+    <script type="text/javascript" src="scripts/protoaculous.js"></script>
+    <script type="text/javascript" src="scripts/salvaLocal.js"></script>
+    <script type="text/javascript" src="scripts/popup.js"></script>
+    <script type="text/javascript" src="scripts/notas.js"></script>
+    <script type="text/javascript" src="scripts/bloco.js"></script>
+    <script type="text/javascript" src="scripts/calculadora.js"></script>
+    <script type="text/javascript" src="scripts/rolagem.js"></script>
 
-		<!-- O arquivo referencias.js e curiosidades.js devem ser incluídos depois do interface -->
-		<script type="text/javascript" src="scripts/interface.js"></script>
-		<script type="text/javascript" src="scripts/referencias.js"></script>
-		<script type="text/javascript" src="scripts/curiosidades.js"></script>
+    <!-- O arquivo referencias.js e curiosidades.js devem ser incluídos depois do interface -->
+    <script type="text/javascript" src="scripts/interface.js"></script>
+    <script type="text/javascript" src="scripts/referencias.js"></script>
+    <script type="text/javascript" src="scripts/curiosidades.js"></script>
 
-		<!-- O arquivo exemplo_correcao.js que contem as funções que corrigem, deve ser incluido antes do exemplo_conteudo.js-->
-		<!-- O arquivo inputs.js deve ser incluído por último -->
-		<script type="text/javascript" src="scripts/m3_geral.js"></script>
-		<script type="text/javascript" src="scripts/complexos.js"></script>
-		<script type="text/javascript" src="scripts/complexos_atv1_correcao.js"></script>
-		<script type="text/javascript" src="scripts/complexos_atv1_conteudo.js"></script>
-		<script type="text/javascript" src="scripts/inputs.js"></script>
+    <!-- O arquivo exemplo_correcao.js que contem as funções que corrigem, deve ser incluido antes do exemplo_conteudo.js-->
+    <!-- O arquivo inputs.js deve ser incluído por último -->
+    <script type="text/javascript" src="scripts/m3_geral.js"></script>
+    <script type="text/javascript" src="scripts/complexos.js"></script>
+    <script type="text/javascript" src="scripts/complexos_atv1_correcao.js"></script>
+    <script type="text/javascript" src="scripts/complexos_atv1_conteudo.js"></script>
+    <script type="text/javascript" src="scripts/inputs.js"></script>
 
-		<script type="text/javascript">
-			var PosicaoAtual = {Atividade: 1, Parte: 2};
-			var ProximaParte = 'atividade1_parte4.html';
-		</script>
+    <script type="text/javascript">
+        var PosicaoAtual = {
+            Atividade: 1,
+            Parte: 2
+        };
+        var ProximaParte = 'atividade1_parte4.html';
+    </script>
 
-		<title>Movimentos Complexos</title>
-	</head>
-	<body>
-	<!--
+    <title>Movimentos Complexos</title>
+</head>
+
+<body>
+    <!--
 	Nunca crie um "onload" aqui, use a Classe Event do Prototype: Event.observe(window, 'load', funcaoAqui);
 	Veja um exemplo no arquivo exemplo_correcao.js
 	-->
-		<div id="container">
-			<div id="cabecalho">
-				<div id="onde_estou">
-					<div class="numero_atividade">1</div>
-					<h1>Movimentos Complexos</h1> <img src="img_layout/setinha-cabecalho.gif" alt=""/> <h2>Dilatação</h2>
-				</div>
-				<div id="logo"></div>
-				<div id="links">
-					<a id="mapa" href="mapa.html" >Mapa</a>
-					<a href="introducao.html">Introdução</a>
-					<a href="index.html">Início</a>
-				</div>
+    <div id="container">
+        <div id="cabecalho">
+            <div id="onde_estou">
+                <div class="numero_atividade">1</div>
+                <h1>Movimentos Complexos</h1> <img src="img_layout/setinha-cabecalho.gif" alt="" />
+                <h2>Dilatação</h2>
+            </div>
+            <div id="logo"></div>
+            <div id="links">
+                <a id="mapa" href="mapa.html">Mapa</a>
+                <a href="introducao.html">Introdução</a>
+                <a href="index.html">Início</a>
+            </div>
 
-				<div class="limpador"></div>
-			</div>
-			<!-- Por enquanto o controle de partes trancadas não será implementado-->
-			<ul id="partes">
-			</ul>
+            <div class="limpador"></div>
+        </div>
+        <!-- Por enquanto o controle de partes trancadas não será implementado-->
+        <ul id="partes">
+        </ul>
 
-			<div id="software">
-				<div id="conteudo">
-					
+        <div id="software">
+            <div id="conteudo">
 
-					<div class="texto_solto">
-						<p>
-							Você viu na parte anterior as condições de Z<sub>1</sub> e de Z<sub>2</sub> para que o triângulo A'B'C' fosse apenas uma rotação do triângulo ABC. Agora você verá o que acontece quando Z<sub>1</sub> é um número real positivo.
-						</p>
-					</div>
 
-					<div class="caixa instrucoes">
-						<h2>Instruções</h2>
-						<p>Você poderá movimentar apenas o ponto Z<sub>1</sub>;</p>
-						<p>A lista abaixo da ferramenta poderá ser consultada a qualquer momento. Ela fornece o tamanho dos lados correspondentes;</p>
-						<p>Não se esqueça de que o triângulo móvel é obtido a partir do fixo e dos valores de Z<sub>1</sub> e Z<sub>2</sub> da seguinte forma:
-							<br class="limpador">
-							<br class="limpador">
-							<img src="imgs/formulaA1_P2.png" alt="operacao" />
-						</p>
-					</div>
+                <div class="texto_solto">
+                    <p>
+                        Você viu na parte anterior as condições de Z<sub>1</sub> e de Z<sub>2</sub> para que o triângulo A'B'C' fosse apenas uma rotação do triângulo ABC. Agora você verá o que acontece quando Z<sub>1</sub> é um número real positivo.
+                    </p>
+                </div>
 
-					<div id="questoes">
-						<p>
-							Faça o que se pede nas questões seguintes lembrando que o ponto Z<sub>2</sub> está novamente fixo na origem.
-						</p>
+                <div class="caixa instrucoes">
+                    <h2>Instruções</h2>
+                    <p>Você poderá movimentar apenas o ponto Z<sub>1</sub>;</p>
+                    <p>A lista abaixo da ferramenta poderá ser consultada a qualquer momento. Ela fornece o tamanho dos lados correspondentes;</p>
+                    <p>Não se esqueça de que o triângulo móvel é obtido a partir do fixo e dos valores de Z<sub>1</sub> e Z<sub>2</sub> da seguinte forma:
+                        <br class="limpador">
+                        <br class="limpador">
+                        <img src="imgs/formulaA1_P2.png" alt="operacao" />
+                    </p>
+                </div>
 
-						<!--
+                <div id="questoes">
+                    <p>
+                        Faça o que se pede nas questões seguintes lembrando que o ponto Z<sub>2</sub> está novamente fixo na origem.
+                    </p>
+
+                    <!--
 						Para o Script se localizar, essa div "texto_genérico" é necessária. Caso não tenha texto aqui, deixe ela vazia.
 						Coloque aqui qualquer texto genérico de instruções e teoria.
 						-->
-						<div id="texto_generico">
-						</div>
+                    <div id="texto_generico">
+                    </div>
 
 
-						<!-- Aqui vão ser colocadas as questões, via JavaScript.-->
-						<div id="parte3_q9"></div>
-						<p>
-							Você observou as condições necessárias para que outro tipo de movimento ocorra, a <strong>dilatação</strong> (ou contração, dependendo do valor de Z<sub>1</sub> escolhido). Perceba que o fator de dilatação do triângulo é dado pelo módulo de Z<sub>1</sub>. Essa transformação acontecerá isoladamente quando Z<sub>2</sub> = 0+0i e Z<sub>1</sub> é um número real positivo.
-						</p>
-						<p>
-							Além disso, note que a dilatação não é um movimento do triângulo, pois altera as suas dimensões. O termo correto a ser usado seria transformação.
-						</p>
-						<a href="javascript:;" id="corrigir_tudo">Corrigir todas as questões</a>
-						<a id="link_continuar">
-							<span class="escondido">Continuar</span>
-						</a>
-						<div class="limpador"></div>
-					</div>
-					<div style="height:200px;"></div>
-				</div>
-			</div>
-			<br class="limpador" />
-			<div id="rodape">
-				<a href="http://m3.ime.unicamp.br" target="_blank">Sobre o Matemática Multimídia</a>
-			</div>
-		</div>
-		<div id="applet">
-			<div id="borda_applet" class="altura_applet_5 borda sem_fundo">
-				<div id="ggbApplet"></div>
-				<script>
-				  var ggbApp = new GGBApplet({"appName": "classic",
-				  "width": 519, "height": 460,
-				  "filename": "applets/complexos_at1_p3.ggb",
-				  "showResetIcon": false,
-				  "enableRightClick": false,
-				  "enableShiftDragZoom": false,
-				  "showMenuBar": false,
-				  "showToolBar": false,
-				  "showToolBarHelp": false,
-				  "showAlgebraInput": false,
-				  "useBrowserForJS": true
-				  }, true);
-				  window.addEventListener("load", function() {
-				  ggbApp.inject('ggbApplet');
-				  });
-				</script>
-				<div class="canto sup_esq"></div>
-				<div class="canto sup_dir"></div>
-				<div class="canto inf_esq"></div>
-				<div class="canto inf_dir"></div>
-				<div id="associacao" style="position:absolute;top:470px;"></div>
-			</div>
-			<div id="comandos">
-				<table>
-					<tr>
-						<td style="width: 250px; vertical-align: top;">
-							<input type="checkbox" id="checkBoxInfo" onClick="javascript:mostrarInfo();"> Informações de Z<sub>1</sub> e Z<sub>2</sub>
-							<br />
-							<input type="checkbox" id="checkBoxTamanho" onClick="javascript:mostrarTamanho();"> Mostrar tamanho dos lados
-						</td>
-						<td style="width: 250px; vertical-align: top;">
-						Pontos
-						<br />
-						<input type="radio" id="AB" name="tamanho" onClick="javascript:mostrarTamanho();"> A, B e A', B'
-						<br />
-						<input type="radio" id="BC" name="tamanho" onClick="javascript:mostrarTamanho();"> B, C e B', C'
-						<br />
-						<input type="radio" id="AC" name="tamanho" onClick="javascript:mostrarTamanho();"> A, C e A', C'
-					</tr>
-				</table>
-			</div>
-		</div>
+                    <!-- Aqui vão ser colocadas as questões, via JavaScript.-->
+                    <div id="parte3_q9"></div>
+                    <p>
+                        Você observou as condições necessárias para que outro tipo de movimento ocorra, a <strong>dilatação</strong> (ou contração, dependendo do valor de Z<sub>1</sub> escolhido). Perceba que o fator de dilatação do triângulo é dado pelo
+                        módulo de Z<sub>1</sub>. Essa transformação acontecerá isoladamente quando Z<sub>2</sub> = 0+0i e Z<sub>1</sub> é um número real positivo.
+                    </p>
+                    <p>
+                        Além disso, note que a dilatação não é um movimento do triângulo, pois altera as suas dimensões. O termo correto a ser usado seria transformação.
+                    </p>
+                    <a href="javascript:;" id="corrigir_tudo">Corrigir todas as questões</a>
+                    <a id="link_continuar">
+                        <span class="escondido">Continuar</span>
+                    </a>
+                    <div class="limpador"></div>
+                </div>
+                <div style="height:200px;"></div>
+            </div>
+        </div>
+        <br class="limpador" />
+        <div id="rodape">
+            <a href="http://m3.ime.unicamp.br" target="_blank">Sobre o Matemática Multimídia</a>
+        </div>
+    </div>
+    <div id="applet">
+        <div id="borda_applet" class="altura_applet_5 borda sem_fundo">
+            <div id="ggbApplet"></div>
+            <script>
+                var ggbApp = new GGBApplet({
+                    "appName": "classic",
+                    "width": 520,
+                    "height": 460,
+                    "filename": "applets/complexos_at1_p3.ggb",
+                    "showResetIcon": false,
+                    "enableRightClick": false,
+                    "enableShiftDragZoom": false,
+                    "showMenuBar": false,
+                    "showToolBar": false,
+                    "showToolBarHelp": false,
+                    "showAlgebraInput": false,
+                    "useBrowserForJS": true
+                }, true);
+                window.addEventListener("load", function() {
+                    ggbApp.inject('ggbApplet');
+                });
+            </script>
+            <div class="canto sup_esq"></div>
+            <div class="canto sup_dir"></div>
+            <div class="canto inf_esq"></div>
+            <div class="canto inf_dir"></div>
+            <div id="associacao" style="position:absolute;top:470px;"></div>
+        </div>
+        <div id="comandos">
+            <table>
+                <tr>
+                    <td style="width: 250px; vertical-align: top;">
+                        <input type="checkbox" id="checkBoxInfo" onClick="javascript:mostrarInfo();"> Informações de Z<sub>1</sub> e Z<sub>2</sub>
+                        <br />
+                        <input type="checkbox" id="checkBoxTamanho" onClick="javascript:mostrarTamanho();"> Mostrar tamanho dos lados
+                    </td>
+                    <td style="width: 250px; vertical-align: top;">
+                        Pontos
+                        <br />
+                        <input type="radio" id="AB" name="tamanho" onClick="javascript:mostrarTamanho();"> A, B e A', B'
+                        <br />
+                        <input type="radio" id="BC" name="tamanho" onClick="javascript:mostrarTamanho();"> B, C e B', C'
+                        <br />
+                        <input type="radio" id="AC" name="tamanho" onClick="javascript:mostrarTamanho();"> A, C e A', C'
+                </tr>
+            </table>
+        </div>
+    </div>
 
-		<div id="associado"></div>
+    <div id="associado"></div>
 
 
-		<div id="ferramentas">
-			<a href="javascript:;" onclick="return false;" id="link_notas"><span class="escondido">referencias</span></a>
-			<a href="javascript:;" onclick="return false;" id="link_bloco"><span class="escondido">bloco de notas</span></a>
-			<!--<a href="javascript:;" id="link_calculadora" onclick="javascript:calculadora();"><span class="escondido">calculadora</span></a>
+    <div id="ferramentas">
+        <a href="javascript:;" onclick="return false;" id="link_notas"><span class="escondido">referencias</span></a>
+        <a href="javascript:;" onclick="return false;" id="link_bloco"><span class="escondido">bloco de notas</span></a>
+        <!--<a href="javascript:;" id="link_calculadora" onclick="javascript:calculadora();"><span class="escondido">calculadora</span></a>
 			<a href="javascript:setActiveStyleSheet('grande');" id="link_acessibilidade"><span class="escondido">acessibilidade</span></a>-->
-		</div>
-		<div id="calc" class="escondido"></div>
-	</body>
+    </div>
+    <div id="calc" class="escondido"></div>
+</body>
+
 </html>

@@ -1,160 +1,171 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns = "http://www.w3.org/1999/xhtml"  xml:lang = "pt-br"  lang = "pt-br">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
 
-		<!-- Geogebra -->
-		<meta name=viewport content="width=device-width,initial-scale=1">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+
+    <!-- Geogebra -->
+    <meta name=viewport content="width=device-width,initial-scale=1">
     <script src="https://www.geogebra.org/apps/deployggb.js"></script>
 
-		<link rel="stylesheet" type="text/css" href="css/estilo.css" media="screen, projection" title="normal"/>
-		<link rel="alternate stylesheet"  type="text/css" href="css/estilo2.css" title="grande" />
-		<link rel="stylesheet" type="text/css" href="css/abertura.css" media="screen, projection" title="normal"/>
-		<link rel="alternate stylesheet" type="text/css" href="css/abertura2.css" media="screen, projection" title="grande"/>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" media="screen, projection" title="normal" />
+    <link rel="alternate stylesheet" type="text/css" href="css/estilo2.css" title="grande" />
+    <link rel="stylesheet" type="text/css" href="css/abertura.css" media="screen, projection" title="normal" />
+    <link rel="alternate stylesheet" type="text/css" href="css/abertura2.css" media="screen, projection" title="grande" />
 
-		<link rel="stylesheet" type="text/css" href="css/popup.css" media="screen, projection" />
-		<link rel="stylesheet" type="text/css" href="css/notas.css" media="screen, projection" />
-		<link rel="stylesheet" type="text/css" href="css/bloco.css" media="screen, projection" />
-		<link rel="stylesheet" type="text/css" href="css/calculadora.css" media="screen, projection" />
+    <link rel="stylesheet" type="text/css" href="css/popup.css" media="screen, projection" />
+    <link rel="stylesheet" type="text/css" href="css/notas.css" media="screen, projection" />
+    <link rel="stylesheet" type="text/css" href="css/bloco.css" media="screen, projection" />
+    <link rel="stylesheet" type="text/css" href="css/calculadora.css" media="screen, projection" />
 
-		<script type="text/javascript" src="scripts/AC_RunActiveContent.js"></script>
-		<script type="text/javascript" src="scripts/protoaculous.js"></script>
-		<script type="text/javascript" src="scripts/salvaLocal.js"></script>
-		<script type="text/javascript" src="scripts/popup.js"></script>
-		<script type="text/javascript" src="scripts/notas.js"></script>
-		<script type="text/javascript" src="scripts/bloco.js"></script>
-		<script type="text/javascript" src="scripts/calculadora.js"></script>
+    <script type="text/javascript" src="scripts/AC_RunActiveContent.js"></script>
+    <script type="text/javascript" src="scripts/protoaculous.js"></script>
+    <script type="text/javascript" src="scripts/salvaLocal.js"></script>
+    <script type="text/javascript" src="scripts/popup.js"></script>
+    <script type="text/javascript" src="scripts/notas.js"></script>
+    <script type="text/javascript" src="scripts/bloco.js"></script>
+    <script type="text/javascript" src="scripts/calculadora.js"></script>
 
-		<script type="text/javascript" src="scripts/interface.js"></script>
-		<script type="text/javascript" src="scripts/referencias.js"></script>
-		<script type="text/javascript" src="scripts/curiosidades.js"></script>
+    <script type="text/javascript" src="scripts/interface.js"></script>
+    <script type="text/javascript" src="scripts/referencias.js"></script>
+    <script type="text/javascript" src="scripts/curiosidades.js"></script>
 
-		<script type="text/javascript" src="scripts/m3_geral.js"></script>
-		<script type="text/javascript" src="scripts/complexos.js"></script>
-		<script type="text/javascript" src="scripts/introducao_correcao.js"></script>
-		<script type="text/javascript" src="scripts/introducao_conteudo.js"></script>
+    <script type="text/javascript" src="scripts/m3_geral.js"></script>
+    <script type="text/javascript" src="scripts/complexos.js"></script>
+    <script type="text/javascript" src="scripts/introducao_correcao.js"></script>
+    <script type="text/javascript" src="scripts/introducao_conteudo.js"></script>
 
-		<script type="text/javascript">
-			var PosicaoAtual = {Atividade: 0, Parte: 0};
-			var Links = $H({
-				link_x: {
-					conteudo: '<img src="imgs/elemento_preto.png" width="30px" alt=""/>',
-					layout: ['seta_baixo', 'esquerda'],
-					largura: 2
-				}});
-		</script>
+    <script type="text/javascript">
+        var PosicaoAtual = {
+            Atividade: 0,
+            Parte: 0
+        };
+        var Links = $H({
+            link_x: {
+                conteudo: '<img src="imgs/elemento_preto.png" width="30px" alt=""/>',
+                layout: ['seta_baixo', 'esquerda'],
+                largura: 2
+            }
+        });
+    </script>
 
-		<title>Movimentos Complexos</title>
-	</head>
-	<body>
-		<div id="container">
-			<div id="cabecalho">
-				<div id="onde_estou">
-					<h1>Movimentos Complexos</h1> <img src="img_layout/setinha-cabecalho.gif" alt=""/> <h2>Introdução</h2>
-				</div>
-				<div id="logo"></div>
-				<div id="links">
-					<a href="mapa.html">Mapa</a>
-					<span>Introdução</span>
-					<a href="index.html">Início</a>
-				</div>
-				<br class="limpador" />
-			</div>
-			<div id="abertura">
-				<div id="conteudo">
-					
-					<div id="texto_abertura">
-						<p>
-							Neste software, você estudará os movimentos de rotação, dilatação e translação de triângulos. Os triângulos serão representados num plano complexo e você verá o quanto isso simplifica o estudo de seus movimentos. Na <a id="gauss">Curiosidade</a> deste software, você poderá ler um pouco mais sobre o plano dos números complexos.
-						</p>
-						<p>
-							No decorrer de todas as atividades você precisará digitar números complexos. A ferramenta ao lado serve para se testar a escrita desses números. Toda vez que você digitar um número e clicar o botão “ok”, o número será representado no plano de Argand-Gauss por um <a id="link_x">X</a>. Mas, para isso, é essencial que o número tenha sido digitado corretamente, respeitando as instruções abaixo:
-						</p>
-						<p>
-							&#10731; Use "*" para multiplicação, "/" para divisão, "+" para adição e "-" para subtração, sempre sem as aspas;
-						</p>
-						<p>
-							&#10731; Digite "i" para unidade imaginária;
-						</p>
-						<p>
-							&#10731; Escreva os ângulos em graus e não em radianos. Por exemplo: digite sen(45), para seno de 45 graus; e cos(30), para cosseno de 30 graus;
-						</p>
-						<p>
-							&#10731; Não se esqueça de usar parênteses ao digitar os ângulos;
-						</p>
-						<p>
-							Você deve fazer pelo menos uma representação de um número na forma algébrica, e pelo menos uma na forma trigonométrica (saiba mais sobre essas representações na curiosidade).
-						</p>
-						<p>
-							Fique à vontade e teste quantos valores quiser.
-						</p>
-						<p>
-							Quando quiser começar as atividades, apenas clique no botão "Começar" logo abaixo.
-						</p>
-						<br class="limpador" />
-						<br class="limpador" />
-						<div class="a_esquerda">
-							<div class="a_esquerda apontador">
-								<a href="mapa.html">Começar</a>
-							</div>
-							<div class="a_esquerda seta_apontador"></div>
-						</div>
-					</div>
-					<!--<div id="imgs_abertura">-->
-						<!--<img src="imgs/introducao.jpg">-->
+    <title>Movimentos Complexos</title>
+</head>
 
-					<br class="limpador" />
-				</div>
-			</div>
-			<br class="limpador" />
-			<div id="rodape">
-				<a href="http://m3.ime.unicamp.br" target="_blank">Sobre o Matemática Multimídia</a>
-			</div>
-		</div>
+<body>
+    <div id="container">
+        <div id="cabecalho">
+            <div id="onde_estou">
+                <h1>Movimentos Complexos</h1> <img src="img_layout/setinha-cabecalho.gif" alt="" />
+                <h2>Introdução</h2>
+            </div>
+            <div id="logo"></div>
+            <div id="links">
+                <a href="mapa.html">Mapa</a>
+                <span>Introdução</span>
+                <a href="index.html">Início</a>
+            </div>
+            <br class="limpador" />
+        </div>
+        <div id="abertura">
+            <div id="conteudo">
 
-		<div id="applet">
-				<div id="borda_applet" class="altura_applet_5 borda sem_fundo">
-					<div id="ggbApplet"></div>
-					<script>
-							var ggbApp = new GGBApplet({"appName": "classic",
-							"width": 519, "height": 460,
-							"filename": "applets/complexos_introducao.ggb",
-							"showResetIcon": false,
-							"enableRightClick": false,
-							"enableShiftDragZoom": false,
-							"showMenuBar": false,
-							"showToolBar": false,
-							"showToolBarHelp": false,
-							"showAlgebraInput": false,
-							"useBrowserForJS": true
-							}, true);
-							window.addEventListener("load", function() {
-							ggbApp.inject('ggbApplet');
-							});
-					</script>
-					<div class="canto sup_esq"></div>
-					<div class="canto sup_dir"></div>
-					<div class="canto inf_esq"></div>
-					<div class="canto inf_dir"></div>
-					<div id="associado"></div>
-				</div>
+                <div id="texto_abertura">
+                    <p>
+                        Neste software, você estudará os movimentos de rotação, dilatação e translação de triângulos. Os triângulos serão representados num plano complexo e você verá o quanto isso simplifica o estudo de seus movimentos. Na <a id="gauss">Curiosidade</a>                        deste software, você poderá ler um pouco mais sobre o plano dos números complexos.
+                    </p>
+                    <p>
+                        No decorrer de todas as atividades você precisará digitar números complexos. A ferramenta ao lado serve para se testar a escrita desses números. Toda vez que você digitar um número e clicar o botão “ok”, o número será representado no plano de Argand-Gauss
+                        por um <a id="link_x">X</a>. Mas, para isso, é essencial que o número tenha sido digitado corretamente, respeitando as instruções abaixo:
+                    </p>
+                    <p>
+                        &#10731; Use "*" para multiplicação, "/" para divisão, "+" para adição e "-" para subtração, sempre sem as aspas;
+                    </p>
+                    <p>
+                        &#10731; Digite "i" para unidade imaginária;
+                    </p>
+                    <p>
+                        &#10731; Escreva os ângulos em graus e não em radianos. Por exemplo: digite sen(45), para seno de 45 graus; e cos(30), para cosseno de 30 graus;
+                    </p>
+                    <p>
+                        &#10731; Não se esqueça de usar parênteses ao digitar os ângulos;
+                    </p>
+                    <p>
+                        Você deve fazer pelo menos uma representação de um número na forma algébrica, e pelo menos uma na forma trigonométrica (saiba mais sobre essas representações na curiosidade).
+                    </p>
+                    <p>
+                        Fique à vontade e teste quantos valores quiser.
+                    </p>
+                    <p>
+                        Quando quiser começar as atividades, apenas clique no botão "Começar" logo abaixo.
+                    </p>
+                    <br class="limpador" />
+                    <br class="limpador" />
+                    <div class="a_esquerda">
+                        <div class="a_esquerda apontador">
+                            <a href="mapa.html">Começar</a>
+                        </div>
+                        <div class="a_esquerda seta_apontador"></div>
+                    </div>
+                </div>
+                <!--<div id="imgs_abertura">-->
+                <!--<img src="imgs/introducao.jpg">-->
 
-				<div id="comandos">
-					Z = <input style="border: 1px solid black; font-size: 15px;" size="29" id="respostaZ" type="text"/></td>
-					<input type="button" id="botao_callb" class="botao botao_medio" value="Ok" onclick="javascript:corrigirExpressao();"/>
-					<br><br>
-					<p><span id="msgDinamicaEspecifica" style="color : #ff0000;"> </span></p>
-				</div>
-		</div>
+                <br class="limpador" />
+            </div>
+        </div>
+        <br class="limpador" />
+        <div id="rodape">
+            <a href="http://m3.ime.unicamp.br" target="_blank">Sobre o Matemática Multimídia</a>
+        </div>
+    </div>
 
-		<div id="ferramentas">
-			<a href="javascript:;" onclick="return false;" id="link_notas"><span class="escondido">referencias</span></a>
-			<a href="javascript:;" onclick="return false;" id="link_bloco"><span class="escondido">bloco de notas</span></a>
-			<a href="javascript:;" id="link_calculadora" onclick="javascript:calculadora();"><span class="escondido">calculadora</span></a>
-			<a href="javascript:setActiveStyleSheet('grande');" id="link_acessibilidade"><span class="escondido">acessibilidade</span></a>
-		</div>
-		<div id="calc" class="escondido"></div>
-	</body>
+    <div id="applet">
+        <div id="borda_applet" class="altura_applet_5 borda sem_fundo">
+            <div id="ggbApplet"></div>
+            <script>
+                var ggbApp = new GGBApplet({
+                    "appName": "classic",
+                    "width": 520,
+                    "height": 460,
+                    "filename": "applets/complexos_introducao.ggb",
+                    "showResetIcon": false,
+                    "enableRightClick": false,
+                    "enableShiftDragZoom": false,
+                    "showMenuBar": false,
+                    "showToolBar": false,
+                    "showToolBarHelp": false,
+                    "showAlgebraInput": false,
+                    "useBrowserForJS": true
+                }, true);
+                window.addEventListener("load", function() {
+                    ggbApp.inject('ggbApplet');
+                });
+            </script>
+            <div class="canto sup_esq"></div>
+            <div class="canto sup_dir"></div>
+            <div class="canto inf_esq"></div>
+            <div class="canto inf_dir"></div>
+            <div id="associado"></div>
+        </div>
+
+        <div id="comandos">
+            Z = <input style="border: 1px solid black; font-size: 15px;" size="29" id="respostaZ" type="text" /></td>
+            <input type="button" id="botao_callb" class="botao botao_medio" value="Ok" onclick="javascript:corrigirExpressao();" />
+            <br><br>
+            <p><span id="msgDinamicaEspecifica" style="color : #ff0000;"> </span></p>
+        </div>
+    </div>
+
+    <div id="ferramentas">
+        <a href="javascript:;" onclick="return false;" id="link_notas"><span class="escondido">referencias</span></a>
+        <a href="javascript:;" onclick="return false;" id="link_bloco"><span class="escondido">bloco de notas</span></a>
+        <a href="javascript:;" id="link_calculadora" onclick="javascript:calculadora();"><span class="escondido">calculadora</span></a>
+        <a href="javascript:setActiveStyleSheet('grande');" id="link_acessibilidade"><span class="escondido">acessibilidade</span></a>
+    </div>
+    <div id="calc" class="escondido"></div>
+</body>
+
 </html>

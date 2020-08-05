@@ -1,164 +1,175 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns = "http://www.w3.org/1999/xhtml"  xml:lang = "pt-br"  lang = "pt-br">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
 
-		<!-- Geogebra -->
-		<meta name=viewport content="width=device-width,initial-scale=1">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+
+    <!-- Geogebra -->
+    <meta name=viewport content="width=device-width,initial-scale=1">
     <script src="https://www.geogebra.org/apps/deployggb.js"></script>
 
-		<link rel="stylesheet" type="text/css" href="css/estilo.css" media="screen, projection" title="normal"/>
-		<link rel="alternate stylesheet" type="text/css" href="css/estilo2.css" media="screen, projection" title="grande" />
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" media="screen, projection" title="normal" />
+    <link rel="alternate stylesheet" type="text/css" href="css/estilo2.css" media="screen, projection" title="grande" />
 
-		<link rel="stylesheet" type="text/css" href="css/popup.css" media="screen, projection" />
-		<link rel="stylesheet" type="text/css" href="css/notas.css" media="screen, projection" />
-		<link rel="stylesheet" type="text/css" href="css/bloco.css" media="screen, projection" />
-		<link rel="stylesheet" type="text/css" href="css/calculadora.css" media="screen, projection" />
-		<!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="css/popup.css" media="screen, projection" />
+    <link rel="stylesheet" type="text/css" href="css/notas.css" media="screen, projection" />
+    <link rel="stylesheet" type="text/css" href="css/bloco.css" media="screen, projection" />
+    <link rel="stylesheet" type="text/css" href="css/calculadora.css" media="screen, projection" />
+    <!--[if IE 7]>
 			<link rel="stylesheet" type="text/css" href="css/estilo_ie7.css" media="screen, projection" />
 		<![endif]-->
-		<!--[if lte IE 6]>
+    <!--[if lte IE 6]>
 			<link rel="stylesheet" type="text/css" href="css/estilo_ie6.css" media="screen, projection" />
 		<![endif]-->
 
-		<script type="text/javascript" src="scripts/AC_RunActiveContent.js"></script>
-		<script type="text/javascript" src="scripts/protoaculous.js"></script>
-		<script type="text/javascript" src="scripts/salvaLocal.js"></script>
-		<script type="text/javascript" src="scripts/popup.js"></script>
-		<script type="text/javascript" src="scripts/notas.js"></script>
-		<script type="text/javascript" src="scripts/bloco.js"></script>
-		<script type="text/javascript" src="scripts/calculadora.js"></script>
-		<script type="text/javascript" src="scripts/rolagem.js"></script>
-		<script type="text/javascript" src="scripts/interface.js"></script>
-		<script type="text/javascript" src="scripts/referencias.js"></script>
+    <script type="text/javascript" src="scripts/AC_RunActiveContent.js"></script>
+    <script type="text/javascript" src="scripts/protoaculous.js"></script>
+    <script type="text/javascript" src="scripts/salvaLocal.js"></script>
+    <script type="text/javascript" src="scripts/popup.js"></script>
+    <script type="text/javascript" src="scripts/notas.js"></script>
+    <script type="text/javascript" src="scripts/bloco.js"></script>
+    <script type="text/javascript" src="scripts/calculadora.js"></script>
+    <script type="text/javascript" src="scripts/rolagem.js"></script>
+    <script type="text/javascript" src="scripts/interface.js"></script>
+    <script type="text/javascript" src="scripts/referencias.js"></script>
 
-		<!-- O arquivo exemplo_correcao.js que contem as funções que corrigem, deve ser incluido antes do exemplo_conteudo.js-->
-		<!-- O arquivo inputs.js deve ser incluído por último -->
+    <!-- O arquivo exemplo_correcao.js que contem as funções que corrigem, deve ser incluido antes do exemplo_conteudo.js-->
+    <!-- O arquivo inputs.js deve ser incluído por último -->
 
-		<script type="text/javascript" src="scripts/m3_geral.js"></script>
-		<script type="text/javascript" src="scripts/complexos.js"></script>
-		<script type="text/javascript" src="scripts/complexos_desafio_correcao.js"></script>
-		<script type="text/javascript" src="scripts/complexos_desafio_conteudo.js"></script>
-		<script type="text/javascript" src="scripts/inputs.js"></script>
-		<script type="text/javascript">
-			var PosicaoAtual = {Atividade: 2, Parte: 0};
-			var ProximaParte = 'atividade2_parte2.html';
-		</script>
+    <script type="text/javascript" src="scripts/m3_geral.js"></script>
+    <script type="text/javascript" src="scripts/complexos.js"></script>
+    <script type="text/javascript" src="scripts/complexos_desafio_correcao.js"></script>
+    <script type="text/javascript" src="scripts/complexos_desafio_conteudo.js"></script>
+    <script type="text/javascript" src="scripts/inputs.js"></script>
+    <script type="text/javascript">
+        var PosicaoAtual = {
+            Atividade: 2,
+            Parte: 0
+        };
+        var ProximaParte = 'atividade2_parte2.html';
+    </script>
 
 
-		<title>Movimentos Complexos</title>
-	</head>
-	<body>
-	<!--
+    <title>Movimentos Complexos</title>
+</head>
+
+<body>
+    <!--
 	Nunca crie um "onload" aqui, use a Classe Event do Prototype: Event.observe(window, 'load', funcaoAqui);
 	Veja um exemplo no arquivo exemplo_correcao.js
 	-->
-		<div id="container">
-			<div id="cabecalho">
-				<div id="onde_estou">
-					<div class="desafio"></div>
-					<h1>Desafio</h1> <img src="img_layout/setinha-cabecalho.gif" alt=""/> <h2>Parte 1</h2>
-				</div>
-				<div id="logo"></div>
-				<div id="links">
-					<a id="mapa" href="mapa.html" >Mapa</a>
-					<a href="introducao.html">Introdução</a>
-					<a href="index.html">Início</a>
-				</div>
+    <div id="container">
+        <div id="cabecalho">
+            <div id="onde_estou">
+                <div class="desafio"></div>
+                <h1>Desafio</h1> <img src="img_layout/setinha-cabecalho.gif" alt="" />
+                <h2>Parte 1</h2>
+            </div>
+            <div id="logo"></div>
+            <div id="links">
+                <a id="mapa" href="mapa.html">Mapa</a>
+                <a href="introducao.html">Introdução</a>
+                <a href="index.html">Início</a>
+            </div>
 
-				<div class="limpador"></div>
-			</div>
-			<!-- Por enquanto o controle de partes trancadas não será implementado-->
-			<ul id="partes">
-			</ul>
+            <div class="limpador"></div>
+        </div>
+        <!-- Por enquanto o controle de partes trancadas não será implementado-->
+        <ul id="partes">
+        </ul>
 
-			<div id="software">
-				<div id="conteudo">
-					
+        <div id="software">
+            <div id="conteudo">
 
-					<div id="questoes">
 
-						<!--
+                <div id="questoes">
+
+                    <!--
 						Para o Script se localizar, essa div "texto_genérico" é necessária. Caso não tenha texto aqui, deixe ela vazia.
 						Coloque aqui qualquer texto genérico de instruções e teoria.
 						-->
-						<div id="texto_generico">
-							<p>
-								Na Atividade 1 deste software, você pôde verificar o comportamento de um triângulo no plano complexo quando os números complexos correspondentes a seus vértices são multiplicados ou somados com outro número complexo.
-							</p>
-							<p>
-								Isso é, você pôde observar as condições necessárias para se obter <strong>rotação, dilatação e translação</strong> de triângulos (figuras) no plano de Argand-Gauss a partir apenas da multiplicação ou da soma de números complexos.
-							</p>
-							<p>
-								Na próxima parte, você poderá testar suas habilidades tentando descobrir quais foram os valores usados na <strong>multiplicação (Z<sub>1</sub>)</strong> e na <strong>soma (Z<sub>2</sub>)</strong> para se obter a transformação apresentada. Agora os dois parâmetros podem atuar simultaneamente.
-							</p>
-							<p>
-								<strong>Dica</strong>: É mais fácil verificar as transformações realizadas no triângulo primeiro por Z<sub>1</sub> e depois por  Z<sub>2</sub>, já que primeiro multiplica-se os números complexos correspondentes aos vértices do triângulo por Z<sub>1</sub> para, em seguida, somar Z<sub>2</sub>. Sendo assim, sugerimos que você pesquise a <strong>rotação</strong> e a <strong>dilatação</strong> antes da <strong>translação</strong>.
-							</p>
-							<p>
-								Na ferramenta ao lado, você pode observar o triângulo pontilhado que representa as transformações sofridas pelo triângulo amarelo ao variarmos os parâmetros Z<sub>1</sub> e Z<sub>2</sub>.
-							</p>
-							<p>
-								Boa sorte!
-							</p>
-						</div>
+                    <div id="texto_generico">
+                        <p>
+                            Na Atividade 1 deste software, você pôde verificar o comportamento de um triângulo no plano complexo quando os números complexos correspondentes a seus vértices são multiplicados ou somados com outro número complexo.
+                        </p>
+                        <p>
+                            Isso é, você pôde observar as condições necessárias para se obter <strong>rotação, dilatação e translação</strong> de triângulos (figuras) no plano de Argand-Gauss a partir apenas da multiplicação ou da soma de números complexos.
+                        </p>
+                        <p>
+                            Na próxima parte, você poderá testar suas habilidades tentando descobrir quais foram os valores usados na <strong>multiplicação (Z<sub>1</sub>)</strong> e na <strong>soma (Z<sub>2</sub>)</strong> para se obter a transformação
+                            apresentada. Agora os dois parâmetros podem atuar simultaneamente.
+                        </p>
+                        <p>
+                            <strong>Dica</strong>: É mais fácil verificar as transformações realizadas no triângulo primeiro por Z<sub>1</sub> e depois por Z<sub>2</sub>, já que primeiro multiplica-se os números complexos correspondentes aos vértices
+                            do triângulo por Z<sub>1</sub> para, em seguida, somar Z<sub>2</sub>. Sendo assim, sugerimos que você pesquise a <strong>rotação</strong> e a <strong>dilatação</strong> antes da <strong>translação</strong>.
+                        </p>
+                        <p>
+                            Na ferramenta ao lado, você pode observar o triângulo pontilhado que representa as transformações sofridas pelo triângulo amarelo ao variarmos os parâmetros Z<sub>1</sub> e Z<sub>2</sub>.
+                        </p>
+                        <p>
+                            Boa sorte!
+                        </p>
+                    </div>
 
-						<!-- Aqui vão ser colocadas as questões, via JavaScript.-->
-
-
-						<!--<a href="javascript:" id="corrigir_tudo">Corrigir todas as questões</a>-->
-						<a id="link_continuar">
-							<span class="escondido">Continuar</span>
-						</a>
-						<div class="limpador"></div>
-					</div>
-					<div style="height:100px;"></div>
-				</div>
-			</div>
-			<br class="limpador" />
-			<div id="rodape">
-				<a href="http://m3.ime.unicamp.br" target="_blank">Sobre o Matemática Multimídia</a>
-			</div>
-		</div>
-		<div id="applet">
-			<div id="borda_applet" class="altura_applet_5 sem_fundo">
-				<div id="ggbApplet"></div>
-				<script>
-				  var ggbApp = new GGBApplet({"appName": "classic",
-				  "width": 519, "height": 460,
-				  "filename": "applets/complexos_at1_p6.ggb",
-				  "showResetIcon": false,
-				  "enableRightClick": false,
-				  "enableShiftDragZoom": false,
-				  "showMenuBar": false,
-				  "showToolBar": false,
-				  "showToolBarHelp": false,
-				  "showAlgebraInput": false,
-				  "useBrowserForJS": true
-				  }, true);
-				  window.addEventListener("load", function() {
-				  ggbApp.inject('ggbApplet');
-				  });
-				</script>
-				<div class="canto sup_esq"></div>
-				<div class="canto sup_dir"></div>
-				<div class="canto inf_esq"></div>
-				<div class="canto inf_dir"></div>
-			</div>
-		</div>
-		<div id="comandos"></div>
-
-		<div id="associado"></div>
+                    <!-- Aqui vão ser colocadas as questões, via JavaScript.-->
 
 
-		<div id="ferramentas">
-			<a href="javascript:;" onclick="return false;" id="link_notas"><span class="escondido">referencias</span></a>
-			<a href="javascript:;" onclick="return false;" id="link_bloco"><span class="escondido">bloco de notas</span></a>
-			<!--<a href="javascript:;" id="link_calculadora" onclick="javascript:calculadora();"><span class="escondido">calculadora</span></a>
+                    <!--<a href="javascript:" id="corrigir_tudo">Corrigir todas as questões</a>-->
+                    <a id="link_continuar">
+                        <span class="escondido">Continuar</span>
+                    </a>
+                    <div class="limpador"></div>
+                </div>
+                <div style="height:100px;"></div>
+            </div>
+        </div>
+        <br class="limpador" />
+        <div id="rodape">
+            <a href="http://m3.ime.unicamp.br" target="_blank">Sobre o Matemática Multimídia</a>
+        </div>
+    </div>
+    <div id="applet">
+        <div id="borda_applet" class="altura_applet_5 sem_fundo">
+            <div id="ggbApplet"></div>
+            <script>
+                var ggbApp = new GGBApplet({
+                    "appName": "classic",
+                    "width": 520,
+                    "height": 460,
+                    "filename": "applets/complexos_at1_p6.ggb",
+                    "showResetIcon": false,
+                    "enableRightClick": false,
+                    "enableShiftDragZoom": false,
+                    "showMenuBar": false,
+                    "showToolBar": false,
+                    "showToolBarHelp": false,
+                    "showAlgebraInput": false,
+                    "useBrowserForJS": true
+                }, true);
+                window.addEventListener("load", function() {
+                    ggbApp.inject('ggbApplet');
+                });
+            </script>
+            <div class="canto sup_esq"></div>
+            <div class="canto sup_dir"></div>
+            <div class="canto inf_esq"></div>
+            <div class="canto inf_dir"></div>
+        </div>
+    </div>
+    <div id="comandos"></div>
+
+    <div id="associado"></div>
+
+
+    <div id="ferramentas">
+        <a href="javascript:;" onclick="return false;" id="link_notas"><span class="escondido">referencias</span></a>
+        <a href="javascript:;" onclick="return false;" id="link_bloco"><span class="escondido">bloco de notas</span></a>
+        <!--<a href="javascript:;" id="link_calculadora" onclick="javascript:calculadora();"><span class="escondido">calculadora</span></a>
 			<a href="javascript:setActiveStyleSheet('grande');" id="link_acessibilidade"><span class="escondido">acessibilidade</span></a>-->
-		</div>
-		<div id="calc" class="escondido"></div>
-	</body>
+    </div>
+    <div id="calc" class="escondido"></div>
+</body>
+
 </html>

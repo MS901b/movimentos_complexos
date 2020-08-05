@@ -140,7 +140,7 @@ var Questoes = [{ //Parte 1
                         seta: set_inicial_q7,
                         tira: unset_inicial_q7,
                         dados: [],
-                        enunciado: 'Escolha a posição de Z<sub>1</sub> que será usada para responder os itens abaixo e clique OK.',
+                        enunciado: 'Escolha a posição de Z<sub>1</sub>, diferente de 1, que será usada para responder os itens abaixo, e clique OK.',
                         usado: 'Esse valor será usado nos itens A, B e C.'
                     },
                     { //A
@@ -165,7 +165,7 @@ var Questoes = [{ //Parte 1
                             [{ antes: "AC e  A'C'", depois: '&#176;' }],
                             [{ antes: "CB e  C'B'", depois: '&#176;' }]
                         ],
-                        msgErro: 'Observe o valor na ferramenta. Ele será fornecido apenas quando a lista estiver selecionada na opção "mostrar retas suportes".',
+                        msgErro: 'Observe o valor na ferramenta. Ele será fornecido apenas quando a lista estiver selecionada na opção "Ângulos entre retas suportes".',
                         msgAjuda: 'Utilize as opções na lista abaixo da ferramenta para ver informações adicionais.'
                     },
                     { //C
