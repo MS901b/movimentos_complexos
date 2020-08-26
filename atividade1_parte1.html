@@ -25,6 +25,14 @@
 			<link rel="stylesheet" type="text/css" href="css/estilo_ie6.css" media="screen, projection" />
 		<![endif]-->
 
+    <style>
+        #coordenadasAeAlinha span:hover {
+            cursor: pointer;
+            color: #A9A9A9;
+            text-decoration: underline;
+        }
+    </style>
+
     <script type="text/javascript" src="scripts/AC_RunActiveContent.js"></script>
     <script type="text/javascript" src="scripts/protoaculous.js"></script>
     <script type="text/javascript" src="scripts/salvaLocal.js"></script>
@@ -130,6 +138,7 @@
                     <p class="formula"> <img src="imgs/operacao.png" alt="operacao" /> </p>
                     <p class="formula"> <img src="imgs/operacaoB.png" alt="operacao" /> </p>
                     <p class="formula"> <img src="imgs/operacaoC.png" alt="operacao" /> </p>
+                    <!--
                     <p>
                         Note que:
                     </p>
@@ -148,6 +157,11 @@
                     <p style="font-size: large">
                         &nbsp; &nbsp; = <span id="aLinhaDinamico" style="font-size: large">1+3i</span>
                     </p>
+                    -->
+
+                    <div id="coordenadasAeAlinha">
+                        <p>Veja, por exemplo as <span onClick="javascript:mostrarAeAlinha()">coordenadas dos pontos A e A'</span> ao lado </p>
+                    </div>
 
                     <div id="parte1_q2"></div>
                     <div id="parte1_q3"></div>
@@ -181,6 +195,7 @@
                     "showResetIcon": false,
                     "enableRightClick": false,
                     "enableShiftDragZoom": false,
+                    "enableLabelDrags": true,
                     "showMenuBar": false,
                     "showToolBar": false,
                     "showToolBarHelp": false,

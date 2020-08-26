@@ -348,7 +348,7 @@ function registerListeners() {
 
 function updateListener(objName) {
     var applet = document.ggbApplet;
-
+    /*
     var z1Real = applet.getXcoord('Z_1');
     z1Real = roundNumber(z1Real, 2);
     var z1Imaginario = applet.getYcoord('Z_1');
@@ -372,7 +372,18 @@ function updateListener(objName) {
     //alert(applet.getXcoord('aLinha'));
     //alert(applet.getYcoord('aLinha'));
     $('aLinhaDinamico').update(aLinhaReal + ((aLinhaImaginario >= 0) ? '+' : '') + aLinhaImaginario + 'i');
+    */
 
+}
+
+function mostrarAeAlinha() {
+    var applet = document.ggbApplet;
+    //aparecer o ponto A e A'
+    if (applet.getValue('d')) {
+        applet.setValue('d', 0);
+    } else {
+        applet.setValue('d', 1);
+    }
 }
 
 

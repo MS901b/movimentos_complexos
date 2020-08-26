@@ -147,6 +147,7 @@ function corrige_q_1_a(valor) {
     var r1 = getResp('r1Desafio');
     var r2 = getResp('r2Desafio');
 
+
     r1 = r1.replace(/\[/g, '(');
     r1 = r1.replace(/\]/g, ')');
     r2 = r2.replace(/\[/g, '(');
